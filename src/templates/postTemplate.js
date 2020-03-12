@@ -1,15 +1,17 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import Post from '../components/post'
 
-export default function Template({ data }) {
+export default function PostTemplate({ data }) {
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
   return (
-    <div className="">
-      <h1>{frontmatter.title}</h1>
-      <h2>{frontmatter.date}</h2>
-      <div dangerouslySetInnerHTML={{ __html: html }} />
-    </div>
+    <Post
+      title={frontmatter.title}
+      date={frontmatter.date}
+      html={html}
+      slug={frontmatter.slug}
+    />
   )
 }
 

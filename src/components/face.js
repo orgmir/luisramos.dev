@@ -3,7 +3,7 @@ import React from 'react'
 import eu from '../images/eu.jpeg'
 
 const Face = () => (
-  <div className="border-b border-gray-200">
+  <div className="border-b border-gray-200 mb-8 text-center">
     <div className="max-w-sm mx-auto mb-6 p-4 bg-white">
       <img
         className="mx-auto w-20 h-20 rounded-full mb-2"

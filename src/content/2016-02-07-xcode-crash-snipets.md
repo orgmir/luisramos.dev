@@ -1,5 +1,5 @@
 ---
-title: Xcode crash on auto-complete: Snippets!
+title: 'Xcode crash on auto-complete: Snippets!'
 date: 2016-02-07
 description: I stumbled with a crash involving XCode and custom snippets
 slug: /xcode-crash-autocomplete-snippets
