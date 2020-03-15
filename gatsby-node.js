@@ -1,4 +1,5 @@
 const path = require('path')
+const { createFilePath } = require(`gatsby-source-filesystem`)
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
@@ -27,4 +28,16 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       component: path.resolve('src/templates/postTemplate.js'),
     })
   })
+}
+
+exports.onCreateNode = ({ node, actions, getNode }) => {
+  const { createNodeField } = actions
+  if (node.internal.type === 'MarkdownRemark') {
+    const value = createFilePath({ node, getNode })
+    createNodeField({
+      name: 'slug',
+      node,
+      value,
+    })
+  }
 }

@@ -36,7 +36,7 @@ const Footer = () => (
           </a>
         </li>
         <li className="py-2">
-          <a className="text-gray-600 hover:text-gray-800" href="">
+          <a className="text-gray-600 hover:text-gray-800" href="/rss.xml">
             RSS Feed
           </a>
         </li>
