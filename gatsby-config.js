@@ -1,13 +1,36 @@
 module.exports = {
   siteMetadata: {
-    title: 'Luis Ramos Blog',
+    title: 'Luis Ramos',
     description:
       'I do a lot of things software related, but mainly I develop native iOS and Android apps. These are their stories DUM DUM.',
     author: '@luisramos1337',
+    menuLinks: [
+      {
+        name: 'Luis Ramos',
+        link: '/',
+      },
+      {
+        name: 'About',
+        link: '/about',
+      },
+      {
+        name: 'Blog',
+        link: '/blog',
+      },
+      {
+        name: 'Contact',
+        link: '/contact',
+      },
+    ],
   },
   plugins: [
     'gatsby-plugin-react-helmet',
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [`gatsby-remark-prismjs`],
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

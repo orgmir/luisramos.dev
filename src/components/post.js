@@ -3,11 +3,13 @@ import { Link } from 'gatsby'
 
 const Post = ({ title, date, html, slug }) => (
   <div className="">
-    <h1 className="text-3xl text-center">
-      <Link to={slug}>{title}</Link>
+    <h1 className="sm:px-8 text-3xl text-center font-thin">
+      <Link className="hover:underline" to={slug}>
+        {title}
+      </Link>
     </h1>
-    <h2>{date}</h2>
-    <div dangerouslySetInnerHTML={{ __html: html }} />
+    <h2 className="text-center mt-2 text-gray-700 text-sm mb-4">{date}</h2>
+    <div className="markdown" dangerouslySetInnerHTML={{ __html: html }} />
   </div>
 )
 

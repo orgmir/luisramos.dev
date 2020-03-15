@@ -7,29 +7,36 @@ import Face from '../components/face'
 import Post from '../components/post'
 
 const IndexPage = ({
+  location,
   data: {
     allMarkdownRemark: { edges },
   },
 }) => {
-  const posts = edges.map(({ node }) => (
-    <Post
-      title={node.frontmatter.title}
-      date={node.frontmatter.date}
-      slug={node.frontmatter.slug}
-      html={node.html}
-    />
+  const posts = edges.map(({ node }, index) => (
+    <>
+      <Post
+        title={node.frontmatter.title}
+        date={node.frontmatter.date}
+        slug={node.frontmatter.slug}
+        html={node.html}
+      />
+      {index != edges.length - 1 && <PostSeparator />}
+    </>
   ))
   return (
-    <Layout>
+    <Layout location={location}>
       <SEO title="Home" />
       <Face />
-      <div className="text-left px-8 text-xl mb-4">Latest posts:</div>
       {posts}
     </Layout>
   )
 }
 
 export default IndexPage
+
+const PostSeparator = () => (
+  <div className="mt-10 mb-10 border-b boder-gray-200"></div>
+)
 
 export const pageQuery = graphql`
   {
