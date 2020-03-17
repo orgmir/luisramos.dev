@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 
 const Footer = () => (
   <footer>
-    <div className="flex flex-wrap justify-between px-8 pt-4 pb-12 text-sm border-t border-gray-200 mt-8">
+    <div className="flex flex-wrap justify-between px-4 pt-4 pb-12 text-sm border-t border-gray-200 mt-8">
       <div className="text-gray-500 py-2">
         A blog by{' '}
         <a
