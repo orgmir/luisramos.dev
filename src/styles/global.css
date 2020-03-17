@@ -20,6 +20,11 @@
   @apply px-4;
 }
 
+.markdown > p:first-child {
+  @apply mt-0;
+  @apply mb-4;
+}
+
 .markdown > * + * {
   @apply mt-0;
   @apply mb-4;
@@ -105,39 +110,6 @@
   @apply px-4;
 }
 
-.markdown blockquote {
-  @apply text-base;
-  @apply border-l-4;
-  @apply border-gray-300;
-  @apply pl-4;
-  @apply pr-4;
-  @apply text-gray-600;
-}
-
-.markdown code {
-  @apply font-mono;
-  @apply text-sm;
-  @apply inline;
-  @apply bg-gray-200;
-  @apply rounded;
-  @apply px-1;
-  @apply py-05;
-}
-
-.markdown pre {
-  @apply bg-gray-100;
-  @apply rounded;
-  @apply p-4;
-}
-
-.markdown pre code {
-  @apply block;
-  @apply bg-transparent;
-  @apply p-0;
-  @apply overflow-visible;
-  @apply rounded-none;
-}
-
 .markdown ul {
   @apply text-base;
   @apply pl-12;
@@ -182,8 +154,10 @@
   @apply px-3;
 }
 
-/* Override pygments style background color. 
-.markdown .highlight pre {
-  @apply bg-gray-100 !important;
+/** Override prism.js theme*/
+
+.markdown :not(pre) > code[class*='language-'] {
+  @apply text-sm;
+  @apply text-black;
+  @apply bg-gray-200;
 }
-*/
