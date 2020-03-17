@@ -6,7 +6,14 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   const result = await graphql(`
     {
-      allMarkdownRemark {
+      allMarkdownRemark(
+        sort: { fields: [frontmatter___date], order: DESC }
+        ${
+          process.env.NODE_ENV === 'production'
+            ? ',filter: {frontmatter: {draft: {ne: true}}}'
+            : ''
+        }
+      ) {
         edges {
           node {
             frontmatter {
