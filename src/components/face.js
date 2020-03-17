@@ -1,6 +1,6 @@
 import React from 'react'
 
-import eu from '../images/eu.jpeg'
+import eu from '../images/EU.jpeg'
 
 const Face = () => (
   <div className="border-b border-gray-200 mb-8 text-center">
