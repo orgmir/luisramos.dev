@@ -12,14 +12,14 @@ If you see anything you want to fix, like typos or some other mistake, please op
 
 ## Acknowledgements
 
-I have to give a big thanks to (taniarascia.com)[taniarascia.com], since her migration post from wordpress to gatsby got me into migrating my blog from hugo.
+I have to give a big thanks to [taniarascia.com](taniarascia.com), since her migration post from wordpress to gatsby got me into migrating my blog from hugo.
 
 ## Author
 
-- (Luis Ramos)[https://luisramos.dev]
+- [Luis Ramos](https://luisramos.dev)
 
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/L3L01IF1R)
 
 ## License
 
-This project is open source and available under the (MIT License)[https://github.com/orgmir/luisramos.dev/blob/master/LICENSE]
+This project is open source and available under the [MIT License](https://github.com/orgmir/luisramos.dev/blob/master/LICENSE).
