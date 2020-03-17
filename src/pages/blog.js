@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Face from '../components/face'
-import { Link } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 
 const BlogPage = ({
   location,
@@ -19,6 +19,7 @@ const BlogPage = ({
         title={frontmatter.title}
         date={frontmatter.date}
         page={frontmatter.slug}
+        key={frontmatter.slug}
       />
     ))}
   </Layout>

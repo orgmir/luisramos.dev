@@ -20,7 +20,7 @@ const IndexPage = ({
         slug={node.frontmatter.slug}
         html={node.html}
       />
-      {index != edges.length - 1 && <PostSeparator />}
+      {index !== edges.length - 1 && <PostSeparator />}
     </>
   ))
   return (

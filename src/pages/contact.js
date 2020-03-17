@@ -7,8 +7,8 @@ const ContactPage = ({ location }) => (
   <Layout location={location}>
     <SEO title="Contact" />
     <Face />
+    <h1 className="text-3xl px-4 mb-6">Contact</h1>
     <div className="markdown">
-      <h1>Contact</h1>
       <p className="mb-4">
         Hello there, I'm Luis, a software developer from Portugal, now based out
         of Sydney. I build native mobile apps for Android and iOS, and I write

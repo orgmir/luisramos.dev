@@ -1,6 +1,7 @@
 import React from 'react'
 
 import eu from '../images/EU.jpeg'
+import { Link } from 'gatsby'
 
 const Face = () => (
   <div className="border-b border-gray-200 mb-8 text-center">
@@ -21,12 +22,12 @@ const Face = () => (
             building
           </a>{' '}
           mobile native apps and{' '}
-          <a
+          <Link
             className="underline text-blue-500 font-normal hover:text-blue-700"
-            href="https://www.luisramos.dev/blog"
+            to="/blog"
           >
             writing
-          </a>{' '}
+          </Link>{' '}
           about what I learn.
         </p>
       </div>
