@@ -9,7 +9,7 @@ tags:
 
 I have been working on a RSS aggregator app called _Ler_. Its available for Android, and you should [give it a try!](https://play.google.com/store/apps/details?id=app.luisramos.ler) It is the first app I design, develop and publish all by myself, so I am pretty proud of that!
 
-<a class="text-center w-48 block mx-auto" href='https://play.google.com/store/apps/details?id=app.luisramos.ler&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
+<a class="text-center w-48 block mx-auto" href='https://play.google.com/store/apps/details?id=app.luisramos.ler'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
 
 I know what you are thinking, _another_ RSS feed app? Aren't there billions of them? Well, yes. But this one is mine. And I have plans. Big plans! Let me tell you how it came to be, and what I want to do with it.
 
@@ -34,7 +34,7 @@ Articles currently open in the browser. I toyed with the idea of having a built 
 
 I am pretty proud of how it turned out, despite not being great at UI design, I kept it simple and it does the job! I have been using it for the past couple of weeks, and I think I impressed myself by actually using it instead of defaulting to Twitter as a time killer.
 
-### Open so everyone can _read_ it 
+### Open so everyone can _read_ it
 
 Not only am I using this app to avoid using twitter all the time, I will also use it as a showcase project. Hence, my plan in the next weeks is to write a bunch of tests, clean up the folder structure, and open source it.
 

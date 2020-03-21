@@ -1,5 +1,6 @@
 # TODO
 
+- [ ] Fix SEO for a particular post, use excerpt for description
 - [ ] Add sitemap plugin
 - [x] Write contact page
 - [x] Finish blog listing page
