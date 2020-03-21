@@ -16,10 +16,8 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
-      - name: Build Gatsby Site
-        uses: jzweifel/gatsby-cli-github-action@master
-        with:
-          gatsby-arg: build
+      - run: npm ci
+      - run: npm run build
 
       - uses: AEnterprise/rsync-deploy@v1.0
         env:

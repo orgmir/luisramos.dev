@@ -1,5 +1,4 @@
 ---
-draft: true
 date: 2020-03-20
 title: 'Ler - An RSS Aggregator for Android!'
 slug: /ler-rss-aggregator-for-android
