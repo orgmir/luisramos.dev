@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 
 const Post = ({ title, date, html, slug }) => (
   <div className="">
-    <h1 className="sm:px-8 text-3xl text-center font-thin">
+    <h1 className="px-4 text-3xl text-center font-thin">
       <Link className="hover:underline" to={slug}>
         {title}
       </Link>
