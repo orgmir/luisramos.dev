@@ -35,6 +35,11 @@ const Footer = () => (
             Twitter
           </a>
         </li>
+        <li className="py-2 pr-4">
+          <a className="text-gray-600 hover:text-gray-800" href="/sitemap.xml">
+            Sitemap
+          </a>
+        </li>
         <li className="py-2">
           <a className="text-gray-600 hover:text-gray-800" href="/rss.xml">
             RSS Feed
