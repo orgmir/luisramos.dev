@@ -42,4 +42,4 @@ So far, I have not worked in an app that had their source open, so most often wh
 
 My plan is to also write about android development, while using the app as an example. I made some architecture choices that I can talk about, since I haven't found a lot of written examples online.
 
-Please give it a spin, and let me know what you think! You can [tweet at me](https://twitter.com/luisramos1337) or send me an [email](mailto:luis@luisramos.app?subject=Ler Feedback). I have a little roadmap with more features, but let me know if you want a particular feature added, and I will add it to the list!
+Please give it a spin, and let me know what you think! You can [tweet at me](https://twitter.com/luisramos1337) or send me an [email](mailto:luis.ramos@hey.com?subject=Ler Feedback). I have a little roadmap with more features, but let me know if you want a particular feature added, and I will add it to the list!

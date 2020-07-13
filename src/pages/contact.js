@@ -27,7 +27,7 @@ const ContactPage = ({ location }) => (
       <h2>Where you can find me:</h2>
       <ul>
         <li>
-          Email: <a href="mailto:luis@luisramos.app">luis@luisramos.app</a>
+          Email: <a href="mailto:luis.ramos@hey.com">luis.ramos@hey.com</a>
         </li>
         <li>
           GitHub: <a href="https://github.com/Orgmir">Orgmir</a>

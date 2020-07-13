@@ -22,7 +22,7 @@ const AboutPage = ({ location }) => (
         My latest language focus are: Kotlin and Swift, with some Javascript on
         the side. Send me a{' '}
         <a href="https://twitter.com/luisramos1337">tweet</a> if you wanna get
-        in touch, or an <a href="mailto:luis@luisramos.app">email</a> if that
+        in touch, or an <a href="mailto:luis.ramos@hey.com">email</a> if that
         suits you better. And check my projects on{' '}
         <a href="https://http://github.com/orgmir">github</a>.
       </p>
