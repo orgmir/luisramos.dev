@@ -161,3 +161,23 @@
   @apply text-black;
   @apply bg-gray-200;
 }
+
+.markdown div[role='alert'] {
+  @apply bg-orange-100;
+  @apply border-l-4;
+  @apply border-orange-500;
+  @apply text-orange-900;
+  @apply leading-normal;
+  @apply p-4;
+  @apply mb-6;
+}
+
+.markdown div[role='info'] {
+  @apply bg-blue-100;
+  @apply border-l-4;
+  @apply border-blue-500;
+  @apply text-blue-900;
+  @apply leading-normal;
+  @apply p-4;
+  @apply mb-6;
+}
