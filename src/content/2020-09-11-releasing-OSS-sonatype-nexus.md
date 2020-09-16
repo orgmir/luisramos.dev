@@ -5,7 +5,7 @@ slug: /publishing-your-first-android-library
 tags: ['Android', 'Mobile', 'snapshot', 'kroclin', 'JIRA', 'Sonatype', 'Nexus']
 ---
 
-Publishing a library you develop is a journey on its own. It can be overwhelming, specialy if you are targeting Android. There is a lot of documentation out here, but I could not find one that would go end to end with it. So I wrote this post!
+Publishing a library you develop is a journey on its own. It can be overwhelming, especially if you are targeting Android. There is a lot of documentation out here, but I could not find one that would go end to end with it. So I wrote this post!
 
 This came about because I released my first open source library: [Kroclin]! It is a snapshot testing library written in Kotlin, to help out writing less code in your tests. Check it out and give it a star if would like. Now, let me tell you about the journey to release it!
 
