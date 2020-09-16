@@ -4,7 +4,7 @@ import Post from '../components/post'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Face from '../components/face'
-import { Disqus, CommentCount } from 'gatsby-plugin-disqus'
+import { Disqus } from 'gatsby-plugin-disqus'
 
 export default function PostTemplate({ location, data }) {
   const { markdownRemark, site } = data
