@@ -29,7 +29,9 @@ const AboutPage = ({ location }) => (
       <p>
         This website is made using <a href="https://www.gatsbyjs.org">Gatsby</a>
         . Since my design skills are not on par with my coding ones, I used{' '}
-        <a href="https://tailwindcss.com">Tailwind</a> to build it.
+        <a href="https://tailwindcss.com">Tailwind</a> to build it. The font
+        used is the lovely{' '}
+        <a href="https://github.com/JetBrains/JetBrainsMono">JetBrains Mono</a>.
       </p>
     </div>
   </Layout>

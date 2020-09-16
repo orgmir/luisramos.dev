@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -20,6 +20,11 @@ const IndexPage = ({
         slug={node.frontmatter.slug}
         html={node.html}
       />
+      <div class="px-4">
+        <Link to={node.frontmatter.slug + '#comments'} className="link-blue">
+          Add to the discussion >
+        </Link>
+      </div>
       {index !== edges.length - 1 && <PostSeparator />}
     </>
   ))

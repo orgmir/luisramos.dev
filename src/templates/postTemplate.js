@@ -26,7 +26,9 @@ export default function PostTemplate({ location, data }) {
         html={html}
         slug={frontmatter.slug}
       />
-      <Disqus config={disqusConfig} className="px-4" />
+      <div id="comments" class="px-4">
+        <Disqus config={disqusConfig} />
+      </div>
     </Layout>
   )
 }
