@@ -39,6 +39,17 @@ module.exports = {
               disableBgImageOnAlpha: true,
             },
           },
+          {
+            resolve: `gatsby-remark-twitter-cards`,
+            options: {
+              title: 'luisramos.dev', // website title
+              background: '#202020',
+              fontColor: '#ffffff', // defaults to white (#ffffff)
+              fontFile: require.resolve(
+                './assets/fonts/JetBrainsMono-Regular.ttf'
+              ),
+            },
+          },
         ],
       },
     },

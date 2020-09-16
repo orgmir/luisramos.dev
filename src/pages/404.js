@@ -6,7 +6,7 @@ import { Link } from 'gatsby'
 
 const NotFoundPage = ({ location }) => (
   <Layout location={location}>
-    <SEO title="404: Not found" />
+    <SEO title="404: Not found" pathname={location.pathname} />
     <div className="markdown">
       <h1 className="text-center text-gray-900" style={{ fontSize: '4rem' }}>
         404

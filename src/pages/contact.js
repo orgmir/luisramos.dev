@@ -5,7 +5,7 @@ import Face from '../components/face'
 
 const ContactPage = ({ location }) => (
   <Layout location={location}>
-    <SEO title="Contact" />
+    <SEO title="Contact" pathname={location.pathname} />
     <Face />
     <h1 className="text-3xl px-4 mb-6">Contact</h1>
     <div className="markdown">

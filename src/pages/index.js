@@ -30,7 +30,7 @@ const IndexPage = ({
   ))
   return (
     <Layout location={location}>
-      <SEO title="Home" />
+      <SEO title="Home" pathname={location.pathname} />
       <Face />
       {posts}
     </Layout>
