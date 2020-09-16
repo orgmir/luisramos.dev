@@ -44,7 +44,7 @@ Once the upload is done, go ahead and log in to https://oss.sonatype.org using y
 
 Select `Staging Repositories` on the side bar, and you should see a list with the repository for your library. Select the repo, and press `Close` on the top bar. This will perform some validation on Sonatype's side, and once the status updates and the repository is tagged as closed, select the repository again and press `Release`.
 
-If you use a script or a plugin, the upload step will probably try to close and release the staging repository. Loggin in to Nexus Repository Manager should only be needed when you are releasing for the first time!
+If you use a plugin, the upload step will probably try to close and release the staging repository. Loggin in to Nexus Repository Manager should only be needed when you are releasing for the first time, or if you use a script like me.
 
 You can now update on your JIRA ticket that the repository has been released. This will let Sonatype know, and they will trigger a sync with maven central, so your library can show when searching in [search.maven.org](https://search.maven.org). This step should is also only needed the first time you are releasing.
 
