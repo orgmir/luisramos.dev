@@ -9,13 +9,13 @@ Publishing a library you develop is a journey on its own. It can be overwhelming
 
 This came about because I released my first open source library: [Kroclin]! It is a snapshot testing library written in Kotlin, to help out writing less code in your tests. Check it out and give it a star if would like. Now, let me tell you about the journey to release it!
 
-Sonatype provides a [guide for OSS repository hosting](ossrh-guide) and [another one for releasing your deployment](oss-releasing) that I read, but they could be more helpful. Everything you need to know is there, it just takes several readings and lots of googling to grok it. Here are the steps you need to go through:
+Sonatype provides a [guide for OSS repository hosting][ossrh-guide] and [another one for releasing your deployment][oss-releasing] that I read, but they could be more helpful. Everything you need to know is there, it just takes several readings and lots of googling to grok it. Here are the steps you need to go through:
 
 First, [create a Sonatype JIRA account](https://issues.sonatype.org/) if you don't have one already.
 
-Then [create a new project issue](https://issues.sonatype.org/secure/CreateIssue.jspa?issuetype=21&pid=10134). Make sure to click this link, since they require that you use the template. In the issue body, write that you want to claim the domain that matches the library `groupId`. In the case of my library, the `groupId` is `dev.luisramos.kroclin` and I claimed `dev.luisramos.*`. Here is [my JIRA ticket](jira-ticket) as an example.
+Then [create a new project issue](https://issues.sonatype.org/secure/CreateIssue.jspa?issuetype=21&pid=10134). Make sure to click this link, since they require that you use the template. In the issue body, write that you want to claim the domain that matches the library `groupId`. In the case of my library, the `groupId` is `dev.luisramos.kroclin` and I claimed `dev.luisramos.*`. Here is [my JIRA ticket][jira-ticket] as an example.
 
-<div role="info">
+<div class="blockquote info">
 I picked up from reading other issues that you only need to go through this process once, if you request a wildcard `groupId`. Other libraries released under the same `groupId` don't require a new project ticket to be created.
 </div>
 
@@ -28,7 +28,7 @@ After you have opened a new project ticket, you need to prove that you own the d
 
 I went with the first option, and since every DNS provider differs I won't go into specifics. Some googling on how to add a TXT record for your DNS provider should get you there.
 
-<div role="info">
+<div class="blockquote info">
 <strong>NOTE:</strong> You will need to submit the full URL for the issue, so in my case the content for the TXT record was <a href="https://issues.sonatype.org/browse/OSSRH-60527"><i>https://issues.sonatype.org/browse/OSSRH-60527</i></a>.
 </div>
 
