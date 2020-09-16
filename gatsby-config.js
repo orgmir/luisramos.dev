@@ -114,5 +114,11 @@ module.exports = {
       },
     },
     'gatsby-plugin-sitemap',
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `luisramos-dev`,
+      },
+    },
   ],
 }

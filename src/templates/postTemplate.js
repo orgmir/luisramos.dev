@@ -4,10 +4,16 @@ import Post from '../components/post'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Face from '../components/face'
+import { Disqus, CommentCount } from 'gatsby-plugin-disqus'
 
 export default function PostTemplate({ location, data }) {
-  const { markdownRemark } = data
+  const { markdownRemark, site } = data
   const { frontmatter, html } = markdownRemark
+  const disqusConfig = {
+    url: `${site.siteMetadata.siteUrl + location.pathname}`,
+    identifier: frontmatter.slug,
+    title: frontmatter.title,
+  }
   return (
     <Layout location={location}>
       <SEO title={frontmatter.title} />
@@ -20,6 +26,7 @@ export default function PostTemplate({ location, data }) {
         html={html}
         slug={frontmatter.slug}
       />
+      <Disqus config={disqusConfig} className="px-4" />
     </Layout>
   )
 }
@@ -32,6 +39,11 @@ export const pageQuery = graphql`
         date(formatString: "DD MMMM, YYYY")
         slug
         title
+      }
+    }
+    site {
+      siteMetadata {
+        siteUrl
       }
     }
   }
