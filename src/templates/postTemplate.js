@@ -16,7 +16,7 @@ export default function PostTemplate({ location, data }) {
   }
   return (
     <Layout location={location}>
-      <SEO title={frontmatter.title} pathname={location.pathname} />
+      <SEO title={frontmatter.title} slug={frontmatter.slug} />
       <div className="md:hidden">
         <Face />
       </div>

@@ -5,7 +5,7 @@ import SEO from '../components/seo'
 
 const AboutPage = ({ location }) => (
   <Layout location={location}>
-    <SEO title="About" pathname={location.pathname} />
+    <SEO title="About" />
     <Face />
     <div className="markdown">
       <p className="mb-4">

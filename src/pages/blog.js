@@ -11,7 +11,7 @@ const BlogPage = ({
   },
 }) => (
   <Layout location={location}>
-    <SEO title="Blog" pathname={location.pathname} />
+    <SEO title="Blog" />
     <Face />
     <h1 className="text-3xl px-4 mb-6">Posts</h1>
     {edges.map(({ node: { frontmatter } }) => (
