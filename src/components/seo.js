@@ -59,18 +59,22 @@ function SEO({ description, lang, meta, title, slug }) {
     },
   ].concat(meta)
 
-  // if (slug) {
-  //   expandedMeta = [
-  //     {
-  //       name: 'twitter:image',
-  //       content: `${site.siteMetadata.siteUrl}${slug}/twitter-card.jpg`,
-  //     },
-  //     {
-  //       name: 'twitter:card',
-  //       content: 'summary_large_image',
-  //     },
-  //   ].concat.expandedMeta
-  // }
+  if (slug) {
+    expandedMeta = [
+      {
+        name: 'og:image',
+        content: '${site.siteMetadata.siteUrl}${slug}/twitter-card.jpg',
+      },
+      {
+        name: 'twitter:image',
+        content: `${site.siteMetadata.siteUrl}${slug}/twitter-card.jpg`,
+      },
+      {
+        name: 'twitter:card',
+        content: 'summary_large_image',
+      },
+    ].concat(expandedMeta)
+  }
 
   return (
     <Helmet
