@@ -40,7 +40,7 @@ module.exports = {
             },
           },
           {
-            resolve: `gatsby-remark-twitter-cards`,
+            resolve: `remark-twitter-cards`,
             options: {
               title: 'luisramos.dev', // website title
               background: '#202020',

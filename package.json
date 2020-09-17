@@ -17,7 +17,6 @@
     "gatsby-plugin-sitemap": "^2.3.1",
     "gatsby-remark-images": "^3.3.30",
     "gatsby-remark-prismjs": "^3.3.34",
-    "gatsby-remark-twitter-cards": "^0.5.0",
     "gatsby-source-filesystem": "^2.1.46",
     "gatsby-transformer-remark": "^2.6.57",
     "gatsby-transformer-sharp": "^2.3.13",
