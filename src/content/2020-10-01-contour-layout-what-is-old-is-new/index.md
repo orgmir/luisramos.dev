@@ -18,9 +18,5 @@ So I'm proud to announce that my [RSS aggregator app Ler](ler) has been re-writt
   - Use isInEditMode to help out those previews
   - Writing aligment code never felt better. No complex UIs in this app, but I can see the potencial in it. Layout is just kotlin lamdas!
 
-
-
-
-
 [contour]: https://github.com/cashapp/contour
 [ler]: https://play.google.com/store/apps/details?id=app.luisramos.ler

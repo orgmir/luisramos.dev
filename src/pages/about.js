@@ -1,38 +1,58 @@
 import React from 'react'
+
+import { Link } from 'gatsby'
 import Layout from '../components/layout'
-import Face from '../components/face'
+import Hello from '../components/hello'
 import SEO from '../components/seo'
 
 const AboutPage = ({ location }) => (
   <Layout location={location}>
     <SEO title="About" />
-    <Face />
-    <div className="markdown">
-      <p className="mb-4">
-        I’m a software developer, currently working in Sydney. I do a lot of
-        things software related, mainly I develop native iOS and Android apps.
+    <Hello />
+    <div className="markdown mt-6">
+      <p>
+        I am a portuguese software developer living in Sydney 🇦🇺. I have been
+        building native Android and iOS apps since 2013 and loving it!
       </p>
       <p>
-        This blog exists to document what I have learned developing apps, since
-        most of my findings are sure to be lost in my memory. It also doubles as
-        a portfolio and as a test ground for keeping my web dev skills somewhat
-        up to date.
+        I have vast experience bringing greenfield mobile probjects into life,
+        working in product teams, and solving problems for companies in the
+        mobile space. You can check my CV <Link to="/cv">here</Link>. If you
+        want to work with me, please{' '}
+        <a href="mailto:luis.ramos@hey.com">reach out</a>!
       </p>
       <p>
-        My latest language focus are: Kotlin and Swift, with some Javascript on
-        the side. Send me a{' '}
-        <a href="https://twitter.com/luisramos1337">tweet</a> if you wanna get
-        in touch, or an <a href="mailto:luis.ramos@hey.com">email</a> if that
-        suits you better. And check my projects on{' '}
-        <a href="https://http://github.com/orgmir">github</a>.
+        I also write software using other stacks and languages. One example is
+        this website, made using <a href="https://www.gatsbyjs.org">Gatsby</a>{' '}
+        and <a href="https://tailwindcss.com">Tailwind</a>. It uses the lovely{' '}
+        <a href="https://github.com/JetBrains/JetBrainsMono">JetBrains Mono</a>{' '}
+        font for code snippets. If you see any
       </p>
       <p>
-        This website is made using <a href="https://www.gatsbyjs.org">Gatsby</a>
-        . Since my design skills are not on par with my coding ones, I used{' '}
-        <a href="https://tailwindcss.com">Tailwind</a> to build it. The font
-        used is the lovely{' '}
-        <a href="https://github.com/JetBrains/JetBrainsMono">JetBrains Mono</a>.
+        My latest language focus are Kotlin and Swift, with some Javascript on
+        the side. I believe that Kotlin multi-platform, along with SwiftUI and
+        Jetpack Compose, will change the way we build apps for all platforms!
+        Get in touch if you want to talk to me about it ;)
       </p>
+      <h2>🔗 Links</h2>
+      <ul>
+        <li>
+          Send me an <a href="mailto:luis.ramos@hey.com">email</a>
+        </li>
+        <li>
+          Send me a <a href="https://twitter.com/luisramos1337">tweet</a>
+        </li>
+        <li>
+          Buy me a <a href="https://ko-fi.com/luisramosdev">coffee</a> ☕️
+        </li>
+        <li>
+          Check out my <a href="https://http://github.com/orgmir">Github</a>
+        </li>
+        <li>
+          Check out my{' '}
+          <a href="https://www.linkedin.com/in/lpramos/">LinkedIn</a>
+        </li>
+      </ul>
     </div>
   </Layout>
 )
