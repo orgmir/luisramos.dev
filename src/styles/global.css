@@ -59,8 +59,9 @@
 
 .markdown {
   @apply text-gray-900;
-  @apply leading-loose;
+  @apply leading-relaxed;
   @apply break-words;
+  @apply text-lg;
 }
 
 .markdown p {
@@ -226,6 +227,7 @@
 .blockquote {
   @apply p-4;
   @apply mb-6;
+  @apply text-lg;
   @apply leading-normal;
   @apply border-l-4;
 }

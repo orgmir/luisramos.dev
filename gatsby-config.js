@@ -6,7 +6,7 @@ module.exports = {
     author: '@luisramos1337',
     menuLinks: [
       {
-        name: 'Luis Ramos',
+        name: '📱 Luis Ramos',
         link: '/',
       },
       {

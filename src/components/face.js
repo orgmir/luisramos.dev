@@ -1,20 +1,13 @@
 import React from 'react'
 
-import eu from '../images/EU.png'
+import Hello from '../components/hello'
 import { Link } from 'gatsby'
 
 const Face = () => (
   <div>
-    <div className="bg-white">
-      <div className="flex text-gray-900 justify-center items-center text-center">
-        <div className="">
-          <img className="rounded-full" src={eu} alt="Luis' Face" />
-        </div>
-        <h1 className="flex-initial text-3xl sm:text-5xl font-bold ml-2 sm:ml-6">
-          Olá! I'm Luis
-        </h1>
-      </div>
-      <p className="text-gray-900 mt-6 leading-7 px-4">
+    <div className="bg-white text-lg">
+      <Hello />
+      <p className="mt-6 leading-7 px-4">
         I'm a freelance mobile developer. I{' '}
         <a
           className="underline text-blue-500 font-normal hover:text-blue-700"
