@@ -4,6 +4,7 @@ import { graphql, Link } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Face from '../components/face'
+import LFW from '../components/lfw'
 import Post from '../components/post'
 
 const IndexPage = ({
@@ -13,7 +14,7 @@ const IndexPage = ({
   },
 }) => {
   const posts = edges.map(({ node }, index) => (
-    <>
+    <div>
       <Post
         title={node.frontmatter.title}
         date={node.frontmatter.date}
@@ -26,12 +27,13 @@ const IndexPage = ({
         </Link>
       </div>
       {index !== edges.length - 1 && <PostSeparator />}
-    </>
+    </div>
   ))
   return (
     <Layout location={location}>
       <SEO title="Home" />
       <Face />
+      <LFW />
       {posts}
     </Layout>
   )
