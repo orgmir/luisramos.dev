@@ -1,36 +1,60 @@
 import React from 'react'
 
-import eu from '../images/EU.jpeg'
+import eu from '../images/EU.png'
 import { Link } from 'gatsby'
 
 const Face = () => (
-  <div className="border-b border-gray-200 mb-8 text-center">
-    <div className="max-w-sm mx-auto mb-6 p-4 bg-white">
-      <img
-        className="mx-auto w-20 h-20 rounded-full mb-2"
-        src={eu}
-        alt="My Face"
-      />
-      <div className="text-gray-900">
-        <h1 className="text-2xl">Olá! I'm Luis</h1>
-        <p className="text-lg mt-1">
-          I'm a software developer{' '}
-          <a
-            className="underline text-blue-500 font-normal hover:text-blue-700"
-            href="https://github.com/orgmir"
-          >
-            building
-          </a>{' '}
-          mobile native apps and{' '}
-          <Link
-            className="underline text-blue-500 font-normal hover:text-blue-700"
-            to="/blog"
-          >
-            writing
-          </Link>{' '}
-          about what I learn.
-        </p>
+  <div>
+    <div className="bg-white">
+      <div className="flex text-gray-900 justify-center items-center text-center">
+        <div className="">
+          <img className="rounded-full" src={eu} alt="Luis' Face" />
+        </div>
+        <h1 className="flex-initial text-3xl sm:text-5xl font-bold ml-2 sm:ml-6">
+          Olá! I'm Luis
+        </h1>
       </div>
+      <p className="text-gray-900 mt-6 leading-7 px-4">
+        I'm a freelance mobile developer. I{' '}
+        <a
+          className="underline text-blue-500 font-normal hover:text-blue-700"
+          href="https://github.com/orgmir"
+        >
+          build
+        </a>{' '}
+        native apps for iOS and Android and{' '}
+        <Link
+          className="underline text-blue-500 font-normal hover:text-blue-700"
+          to="/blog"
+        >
+          write
+        </Link>{' '}
+        about what I learn. Check out my{' '}
+        <a
+          className="underline text-blue-500 font-normal hover:text-blue-700"
+          href="https://github.com/orgmir"
+        >
+          contributions
+        </a>{' '}
+        to open source and my{' '}
+        <Link
+          className="underline text-blue-500 font-normal hover:text-blue-700"
+          to="/blog"
+        >
+          personal projects
+        </Link>
+        .
+      </p>
+      <p className="mt-6 leading-7 px-4">
+        Learn more{' '}
+        <Link
+          className="underline text-blue-500 font-normal hover:text-blue-700"
+          to="/projects"
+        >
+          about me here
+        </Link>
+        .
+      </p>
     </div>
   </div>
 )
