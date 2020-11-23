@@ -63,7 +63,7 @@ function SEO({ description, lang, meta, title, slug }) {
     expandedMeta = [
       {
         name: 'og:image',
-        content: '${site.siteMetadata.siteUrl}${slug}/twitter-card.jpg',
+        content: `${site.siteMetadata.siteUrl}${slug}/twitter-card.jpg`,
       },
       {
         name: 'twitter:image',

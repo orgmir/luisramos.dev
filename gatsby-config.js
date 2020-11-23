@@ -6,20 +6,20 @@ module.exports = {
     author: '@luisramos1337',
     menuLinks: [
       {
-        name: 'Luis Ramos',
+        name: '📱 Luis Ramos',
         link: '/',
-      },
-      {
-        name: 'About',
-        link: '/about',
       },
       {
         name: 'Blog',
         link: '/blog',
       },
       {
-        name: 'Contact',
-        link: '/contact',
+        name: 'CV',
+        link: '/cv',
+      },
+      {
+        name: 'About',
+        link: '/about',
       },
     ],
     siteUrl: 'https://luisramos.dev',

@@ -1,52 +1,35 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
 const Footer = () => (
-  <footer>
-    <div className="flex flex-wrap justify-between px-4 pt-4 pb-12 text-sm border-t border-gray-200 mt-8">
-      <div className="text-gray-500 py-2">
-        A blog by{' '}
+  <footer className="mx-0 sm:mx-4">
+    <ul className="flex flex-wrap-reverse sm:flex-wrap justify-center items-center sm:justify-end md:max-w-screen-md md:mx-auto text-xs py-6 mt-6 border-t border-orange-300">
+      <li className="w-screen sm:w-auto sm:flex-grow text-center sm:text-left mt-4 sm:mt-0">
+        © 2020 Luis Ramos
+      </li>
+      <li className="pr-4">
+        <a className="hover:text-orange-500" href="https://github.com/orgmir">
+          Github
+        </a>
+      </li>
+      <li className="pr-4">
         <a
-          className="text-gray-600 hover:text-gray-800"
+          className="hover:text-orange-500"
           href="https://twitter.com/luisramos1337"
         >
-          Luis Ramos
+          Twitter
         </a>
-      </div>
-      <ul className="flex">
-        <li className="py-2 pr-4">
-          <Link className="text-gray-600 hover:text-gray-800" to="/">
-            Home
-          </Link>
-        </li>
-        <li className="py-2 pr-4">
-          <a
-            className="text-gray-600 hover:text-gray-800"
-            href="https://http://github.com/orgmir"
-          >
-            Github
-          </a>
-        </li>
-        <li className="py-2 pr-4">
-          <a
-            className="text-gray-600 hover:text-gray-800"
-            href="https://twitter.com/luisramos1337"
-          >
-            Twitter
-          </a>
-        </li>
-        <li className="py-2 pr-4">
-          <a className="text-gray-600 hover:text-gray-800" href="/sitemap.xml">
-            Sitemap
-          </a>
-        </li>
-        <li className="py-2">
-          <a className="text-gray-600 hover:text-gray-800" href="/rss.xml">
-            RSS Feed
-          </a>
-        </li>
-      </ul>
-    </div>
+      </li>
+      <li className="pr-4">
+        <a className="hover:text-orange-500" href="/sitemap.xml">
+          Sitemap
+        </a>
+      </li>
+      <li className="">
+        <a className="hover:text-orange-500" href="/rss.xml">
+          RSS Feed
+        </a>
+      </li>
+    </ul>
   </footer>
 )
 
