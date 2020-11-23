@@ -61,6 +61,7 @@ function SEO({ description, lang, meta, title, slug }) {
 
   if (slug) {
     expandedMeta = [
+      ...expandedMeta,
       {
         name: 'og:image',
         content: `${site.siteMetadata.siteUrl}${slug}/twitter-card.jpg`,
@@ -73,7 +74,19 @@ function SEO({ description, lang, meta, title, slug }) {
         name: 'twitter:card',
         content: 'summary_large_image',
       },
-    ].concat(expandedMeta)
+    ]
+  } else {
+    expandedMeta = [
+      ...expandedMeta,
+      {
+        name: 'og:image',
+        content: `${site.siteMetadata.siteUrl}/big_me.png`,
+      },
+      {
+        name: 'twitter:image',
+        content: `${site.siteMetadata.siteUrl}/big_me.png`,
+      },
+    ]
   }
 
   return (

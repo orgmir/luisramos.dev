@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Luis Ramos',
     description:
-      'I do a lot of things software related, but mainly I develop native iOS and Android apps. These are their stories DUM DUM.',
+      'Freelance mobile developer building native iOS and Android apps. I write about what I learn!',
     author: '@luisramos1337',
     menuLinks: [
       {

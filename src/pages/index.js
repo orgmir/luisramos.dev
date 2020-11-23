@@ -32,7 +32,7 @@ const IndexPage = ({
   ))
   return (
     <Layout location={location}>
-      <SEO title="Home" />
+      <SEO title="Olá" />
       <Face />
       <LFW />
       <div className="mx-4 pb-1 flex border-b-2 border-orange-300">
