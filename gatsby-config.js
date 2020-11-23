@@ -126,9 +126,9 @@ module.exports = {
     },
     'gatsby-plugin-sitemap',
     {
-      resolve: `gatsby-plugin-disqus`,
+      resolve: 'gatsby-plugin-emoji-favicon',
       options: {
-        shortname: `luisramos-dev`,
+        emoji: '📱',
       },
     },
   ],
