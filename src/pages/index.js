@@ -1,11 +1,9 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
-
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Face from '../components/face'
 import LFW from '../components/lfw'
-import Post from '../components/post'
 import PostListing from '../components/post-listing'
 
 const ProjectListing = ({ title, subtitle, slug }) => (
@@ -41,7 +39,7 @@ const IndexPage = ({
         <h2 className="text-2xl font-medium">Latest posts</h2>
         <Link
           to="/blog"
-          className="self-center ml-8 text-xs px-2 py-1 bg-orange-200 text-orange-900 rounded-sm"
+          className="self-center ml-8 text-xs px-2 py-1 bg-orange-200 text-orange-900 rounded-sm shadow-sm hover:shadow"
         >
           View all
         </Link>

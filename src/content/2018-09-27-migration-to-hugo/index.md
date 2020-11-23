@@ -11,7 +11,7 @@ _**Update:**_ Since this post was made, I have moved my blog to a new website an
 
 <p></p>
 
--------
+---
 
 The blog has a new look! I like to think it looks a bit better now. Of course the fun side of it is the tech stack. It is now generated using [hugo], deployed using [Gitlab][gitlab] incredible CI pipelines, and also I'm hosting it on a [Digital Ocean][digitalocean] droplet.
 
@@ -31,7 +31,7 @@ You also need to declare the language you are highlighting (`swift` in that exam
 
 Generating new content is super easy and fast, you just run the following command:
 
-```sh
+```bash
 hugo new posts/title-of-blog-post.md
 ```
 

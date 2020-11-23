@@ -239,7 +239,7 @@
 }
 
 .blockquote.alert:before {
-  content: '⚠️';
+  content: '⚠️ ';
 }
 
 .blockquote.info {
@@ -249,5 +249,36 @@
 }
 
 .blockquote.info:before {
-  content: 'ℹ️';
+  content: 'ℹ️ ';
+}
+
+/** CV styles **/
+
+.markdown-cv {
+  @apply markdown;
+  @apply text-base;
+  @apply text-black;
+}
+
+.markdown-cv > p:first-child {
+  @apply mt-0;
+  @apply mb-2;
+}
+
+.markdown-cv p {
+  @apply px-0;
+}
+
+.markdown-cv ul {
+  @apply text-base;
+  @apply pl-12;
+  @apply pr-4;
+  @apply list-disc;
+}
+
+.markdown-cv ol {
+  @apply text-base;
+  @apply pl-12;
+  @apply pr-4;
+  @apply list-decimal;
 }

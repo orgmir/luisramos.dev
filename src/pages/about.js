@@ -26,7 +26,11 @@ const AboutPage = ({ location }) => (
         this website, made using <a href="https://www.gatsbyjs.org">Gatsby</a>{' '}
         and <a href="https://tailwindcss.com">Tailwind</a>. It uses the lovely{' '}
         <a href="https://github.com/JetBrains/JetBrainsMono">JetBrains Mono</a>{' '}
-        font for code snippets. If you see any
+        font for code snippets. If you see any issues, please{' '}
+        <a href="https://github.com/Orgmir/luisramos.dev/">
+          open a pull request
+        </a>{' '}
+        since this website is open source!
       </p>
       <p>
         My latest language focus are Kotlin and Swift, with some Javascript on
