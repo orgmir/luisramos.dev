@@ -11,8 +11,12 @@ const AboutPage = ({ location }) => (
     <Hello />
     <div className="markdown mt-6">
       <p>
-        I am a portuguese software developer living in Sydney 🇦🇺. I have been
-        building native Android and iOS apps since 2013 and loving it!
+        I am a portuguese software developer living in Sydney{' '}
+        <span role="img" aria-label="australian flag">
+          🇦🇺
+        </span>
+        . I have been building native Android and iOS apps since 2013 and loving
+        it!
       </p>
       <p>
         I have vast experience bringing greenfield mobile probjects into life,
@@ -38,7 +42,12 @@ const AboutPage = ({ location }) => (
         Jetpack Compose, will change the way we build apps for all platforms!
         Get in touch if you want to talk to me about it ;)
       </p>
-      <h2>🔗 Links</h2>
+      <h2>
+        <span role="img" aria-label="link">
+          🔗
+        </span>{' '}
+        Links
+      </h2>
       <ul>
         <li>
           Send me an <a href="mailto:luis.ramos@hey.com">email</a>
@@ -47,7 +56,10 @@ const AboutPage = ({ location }) => (
           Send me a <a href="https://twitter.com/luisramos1337">tweet</a>
         </li>
         <li>
-          Buy me a <a href="https://ko-fi.com/luisramosdev">coffee</a> ☕️
+          Buy me a <a href="https://ko-fi.com/luisramosdev">coffee</a>{' '}
+          <span role="img" aria-label="coffee">
+            ☕️
+          </span>
         </li>
         <li>
           Check out my <a href="https://http://github.com/orgmir">Github</a>

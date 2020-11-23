@@ -40,7 +40,7 @@ After they reply, go ahead and upload your first artifact. You can copy my [`gra
 
 Once the upload is done, go ahead and log in to https://oss.sonatype.org using your Sonatype JIRA account.
 
-![Nexus Repository Manager](./nexus_repository_manager.png)
+![Nexus Repository Manager](nexus_repository_manager.png)
 
 Select `Staging Repositories` on the side bar, and you should see a list with the repository for your library. Select the repo, and press `Close` on the top bar. This will perform some validation on Sonatype's side, and once the status updates and the repository is tagged as closed, select the repository again and press `Release`.
 

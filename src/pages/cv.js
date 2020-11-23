@@ -23,8 +23,6 @@ const CvPage = ({ location }) => {
 					Last updated: {updatedAt}
 				</time>
 
-				<div class="blockquote alert mt-4">Under construction ;)</div>
-
 				<h2 class="border-b-2 border-orange-300 pb-1 text-2xl mb-8 mt-6">
 					<a href="#work-experience"> Work Experience </a>
 				</h2>
@@ -205,7 +203,16 @@ const CvPage = ({ location }) => {
 						</li>
 					</ul>
 				</Job>
-				<div class="blockquote info">To be continued...</div>
+				<div class="blockquote alert mt-4">
+					Under construction, refer to my{' '}
+					<a
+						href="https://www.linkedin.com/in/lpramos/"
+						class="hover:underline font-bold"
+					>
+						linkedin
+					</a>{' '}
+					in the meanwhile.
+				</div>
 			</div>
 		</Layout>
 	)

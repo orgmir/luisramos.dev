@@ -1,8 +1,7 @@
 import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import Face from '../components/face'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import PostListing from '../components/post-listing'
 
 const BlogPage = ({
