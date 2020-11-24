@@ -11,6 +11,8 @@ I have been working on a RSS aggregator app called _Ler_. Its available for Andr
 
 <a class="text-center w-48 block mx-auto" href='https://play.google.com/store/apps/details?id=app.luisramos.ler'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
 
+![ler app screenshots](ler-screenshots.png)
+
 I know what you are thinking, _another_ RSS feed app? Aren't there billions of them? Well, yes. But this one is mine. And I have plans. Big plans! Let me tell you how it came to be, and what I want to do with it.
 
 ### Twitter is a time sink
