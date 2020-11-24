@@ -42,7 +42,7 @@ const Face = () => (
         Learn more{' '}
         <Link
           className="underline text-blue-500 font-normal hover:text-blue-700"
-          to="/projects"
+          to="/about"
         >
           about me here
         </Link>

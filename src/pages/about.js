@@ -19,7 +19,7 @@ const AboutPage = ({ location }) => (
         it!
       </p>
       <p>
-        I have vast experience bringing greenfield mobile probjects into life,
+        I have vast experience bringing greenfield mobile projects to life,
         working in product teams, and solving problems for companies in the
         mobile space. You can check my CV <Link to="/cv">here</Link>. If you
         want to work with me, please{' '}

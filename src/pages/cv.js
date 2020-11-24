@@ -57,7 +57,7 @@ const CvPage = ({ location }) => {
 				</Job>
 
 				<Job
-					company="Colonal First State"
+					company="Colonial First State"
 					image={cfsIcon}
 					link="https://www3.colonialfirststate.com.au/"
 					title="Specialist Software Developer"

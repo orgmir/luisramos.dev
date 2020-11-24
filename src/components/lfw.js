@@ -5,7 +5,7 @@ const LFW = () => (
 		<span className="text-gray-900 font-bold"> Need a mobile developer?</span>
 		<p className="mt-2 text-gray-900 ">
 			I am currently open to freelance and contract work for Android and iOS. If
-			you are interested in working with together,{' '}
+			you are interested in working together,{' '}
 			<a
 				className="underline text-blue-500 hover:text-blue-700"
 				href="mailto:luis.ramos@hey.com"
