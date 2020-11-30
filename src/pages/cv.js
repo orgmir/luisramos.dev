@@ -7,6 +7,9 @@ import cfsIcon from '../images/cfs-icon.jpg'
 import mfIcon from '../images/mf-icon.jpg'
 import lrIcon from '../images/lr-icon.jpg'
 import phoenixIcon from '../images/phoenix-icon.jpg'
+import mlIcon from '../images/mullenlowe-icon.png'
+import gleamIcon from '../images/gleam-icon.jpg'
+import blissIcon from '../images/bliss-icon.jpg'
 
 const CvPage = ({ location }) => {
 	const updatedAt = new Date().toLocaleDateString(undefined, {
@@ -35,8 +38,8 @@ const CvPage = ({ location }) => {
 					dates="November 2019 - ★ Present"
 				>
 					<p>
-						Independent contracting and freelance work for iOS and Android
-						related projects.
+						Independent contractor and freelancer, focusing on projects in the
+						native mobile space.
 					</p>
 				</Job>
 
@@ -51,8 +54,9 @@ const CvPage = ({ location }) => {
 					<p>
 						Phoenix DX is a digital transformation company leveraging the{' '}
 						<a href="https://www.outsystems.com/">OutSystems</a> platform. I
-						work as one of the mobile software consultants for the company,
-						helping them with their mobile deployments.
+						work as a mobile software consultant, helping them with native
+						support for their <a href="https://cordova.apache.org">Cordova</a>{' '}
+						plugins.
 					</p>
 				</Job>
 
@@ -82,26 +86,28 @@ const CvPage = ({ location }) => {
 					</p>
 					<ul class="">
 						<li>
-							Architecture design of the application to match the business'
+							Design the architecture of the app to match the business'
 							expectations
 						</li>
-						<li>Build the foundation and feature set laid out by the team</li>
 						<li>
 							Advising the Product Owner on the capabilities of the platform
 						</li>
-						<li>Refine proposed features with the product team</li>
 						<li>
-							Setup the teams CI pipeline into the company platform (
-							<a href="https://www.jetbrains.com/teamcity/">TeamCity</a>)
+							Setup the teams CI pipeline into the company's
+							<a href="https://www.jetbrains.com/teamcity/">TeamCity</a>{' '}
+							platform.
 						</li>
 						<li>
-							Analyze post launch app analytics using{' '}
-							<a href="https://appcenter.ms/">App Center</a>, monitoring crashes
-							to ensure level of quality was kept
+							Analyze post launch app analytics and monitoring crashes using{' '}
+							<a href="https://appcenter.ms/">App Center</a>
 						</li>
 						<li>
 							Interfacing with offshore team to handle customers' feedback and
 							prioritise issues
+						</li>
+						<li>
+							Advise wider team architects on how to best support the mobile
+							platform
 						</li>
 					</ul>
 				</Job>
@@ -127,14 +133,10 @@ const CvPage = ({ location }) => {
 						<a href="https://russellinvestments.com/au">Russell Investments</a>
 						(iOS):
 						<ul>
-							<li>
-								Organized work with other developers to make sure delivery dates
-								where met
-							</li>
 							<li>Shipped bi-weekly updates to the App Store</li>
 							<li>
-								Refactor the application away from a single Storyboard, so devs
-								could work without merge conflicts
+								Refactor the application away from a single Storyboard, to
+								reduce merge conflicts
 							</li>
 							<li>
 								Implement in memory local storage using{' '}
@@ -157,20 +159,20 @@ const CvPage = ({ location }) => {
 						<a href="https://sleepsense.com.au/">Sleepsense</a> (iOS & Android):
 						<ul>
 							<li>
-								Shipped an iOS app that controlled a smart bed with three BT
-								devices (bed frame, mattress, sleep tracker) using{' '}
+								Shipped an iOS and an Android app that controlled a smart bed
+								with three BT devices (bed frame, mattress, sleep tracker) using{' '}
 								<a href="https://github.com/ReactiveX/RxSwift">RxSwift</a> and{' '}
 								<a href="https://github.com/Polidea/RxBluetoothKit">
 									RxBluetooth
 								</a>
 							</li>
 							<li>
-								Built an onboarding flow that would allow for users to
-								seamlessly sync with the smart bed
+								Built an onboarding flow that would detect user's breathing
+								rythim to pair them with their smart bed
 							</li>
 							<li>
-								Lead a small team of developers to build and release the Android
-								version
+								Lead a team of two devs through know problems and pitfalls for
+								the Android build.
 							</li>
 						</ul>
 					</p>
@@ -179,14 +181,14 @@ const CvPage = ({ location }) => {
 						Android):
 						<ul>
 							<li>
-								Worked with ABC mobile team to bootstrap the initial prototype
-								and release it internally
+								Built proof of concept app to showcase feature feasibility
 							</li>
 							<li>
-								Built proof of concept app to showcase feasability of features
+								Worked integrated with ABC mobile team to bootstrap the initial
+								prototype for an internal release
 							</li>
 							<li>
-								Used{' '}
+								Integrated{' '}
 								<a href="https://developer.android.com/guide/topics/media/exoplayer">
 									ExoPlayer
 								</a>{' '}
@@ -194,25 +196,108 @@ const CvPage = ({ location }) => {
 							</li>
 						</ul>
 					</p>
-					<p>Other non-mobile work:</p>
+					<p>
+						My skills in web development were also put to use. I worked on
+						several internal prototypes and websites that used{' '}
+						<a href="https://reactjs.org/">React</a> and{' '}
+						<a href="https://vuejs.org/">Vue.js</a>. I also worked on migrating
+						legacy web projects to <a href="https://www.docker.com/">Docker</a>{' '}
+						so we could reduce our maintenance burden.
+					</p>
+				</Job>
+				<Job
+					company="Mullen Lowe Profero"
+					image={mlIcon}
+					link="https://www.mullenloweprofero.com"
+					title="Mobile Software Developer"
+					location="Sydney"
+					dates="September 2015 - April 2016"
+				>
+					<p>
+						Joined Profero to be part of the mobile team responsible for the{' '}
+						<a href="https://www.eastlandssc.com.au/">
+							Eastlands Shopping Center
+						</a>{' '}
+						app. I was involved in both iOS and Android builds, sadly the
+						Android build never saw the playstore.
+					</p>
 					<ul>
 						<li>
-							Worked on migrating legacy web projects to use{' '}
-							<a href="https://www.docker.com">Docker</a> so maintenance could
-							be done effectively
+							Integrated <a href="https://meridianapps.com/">Meridian</a> iOS
+							sdk for indoor navigation in the shopping center, that made use of
+							bluetooth low energy beacons
+						</li>
+						<li>
+							Setup the local deployment of the iOS app using{' '}
+							<a href="https://fastlane.tools/">fastlane</a>
+						</li>
+						<li>
+							Setup certificate management for the team using{' '}
+							<a href="https://docs.fastlane.tools/actions/match/">
+								fastlane match
+							</a>
+						</li>
+						<li>
+							Integrated <a href="https://www.jenkins.io/">Jenkins CI</a> with
+							our repository to run our tests against several simulators
 						</li>
 					</ul>
 				</Job>
-				<div class="blockquote alert mt-4">
-					Under construction, refer to my{' '}
-					<a
-						href="https://www.linkedin.com/in/lpramos/"
-						class="hover:underline font-bold"
-					>
-						linkedin
-					</a>{' '}
-					in the meanwhile.
-				</div>
+				<Job
+					company="Gleam SA"
+					image={gleamIcon}
+					link="https://www.linkedin.com/company/gleam/"
+					title="Mobile Software Developer"
+					location="Lisbon, Portugal"
+					dates="August 2014 - July 2015"
+				>
+					<p class="text-sm italic">
+						Gleam was in business from July 2013 until August 2016, when it was{' '}
+						<a href="https://observador.pt/2016/08/11/farfetch-abre-novo-escritorio-em-lisboa-e-cria-50-postos-de-trabalho/">
+							adquired
+						</a>{' '}
+						by <a href="https://www.farfetch.com">Farfetch</a>.
+					</p>
+
+					<p>
+						Gleam was a mobile fashion app that brought a feed of curated
+						fashion items to your fingertips. I joined the team looking to
+						augment my product experience and was tasked with building version
+						2.0 of the app:
+					</p>
+					<ul>
+						<li>
+							Architectured the app to better handle the existing load, support
+							the new redesign, and allow for faster iteration
+						</li>
+						<li>Workshop with the team new features and revenue streams</li>
+						<li>Advise the CEO on the capabilities of the mobile platform</li>
+					</ul>
+				</Job>
+				<Job
+					company="Bliss Applications"
+					image={blissIcon}
+					link="https://www.blissapplications.com/"
+					title="Mobile Software Developer"
+					location="Lisbon, Portugal"
+					dates="August 2012 - August 2014"
+				>
+					I joined Bliss Applications while I was still finishing university. I
+					was involved in various projects, focusing on bringing the best mobile
+					experiences to the market and learning from my peers. In the end I
+					built so many apps that I only remember a few and have no track record
+					of them.
+					<ul>
+						<li>
+							Applied my uni knowledge into developing an iOS skill set, later
+							adding Android to my toolbelt
+						</li>
+						<li>
+							Self managed the projects I was reponsible for, communicating
+							frequently with other team members and management
+						</li>
+					</ul>
+				</Job>
 			</div>
 		</Layout>
 	)
