@@ -16,6 +16,11 @@ export default function PostTemplate({ location, data }) {
   return (
     <Layout location={location}>
       <SEO title={frontmatter.title} slug={frontmatter.slug} />
+      {frontmatter.draft === true ? (
+        <div class="blockquote alert">
+          <i>You are looking at a draft post.</i>
+        </div>
+      ) : null}
       <Post
         title={frontmatter.title}
         date={frontmatter.date}
@@ -62,6 +67,7 @@ export const pageQuery = graphql`
         date(formatString: "DD MMMM, YYYY")
         slug
         title
+        draft
       }
     }
     site {
