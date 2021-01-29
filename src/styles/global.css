@@ -218,6 +218,13 @@
   font-family: 'JetBrains Mono', 'Courier New', Courier, monospace;
 }
 
+.markdown code span.token {
+  -webkit-font-feature-settings: 'liga' on, 'calt' on;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: 'JetBrains Mono', 'Courier New', Courier, monospace;
+}
+
 .markdown :not(pre) > code[class*='language-'] {
   @apply text-sm;
   @apply text-black;
