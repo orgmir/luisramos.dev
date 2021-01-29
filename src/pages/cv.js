@@ -299,7 +299,7 @@ const CvPage = ({ location }) => {
 					</ul>
 				</Job>
 			</div>
-			<img src="/etphonehome.gif?s=cv" />
+			<img src="/etphonehome.gif?s=cv" alt="" />
 		</Layout>
 	)
 }

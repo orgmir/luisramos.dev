@@ -23,7 +23,7 @@ const BlogPage = ({
         />
       ))}
     </ul>
-    <img src="/etphonehome.gif?s=blog" />
+    <img src="/etphonehome.gif?s=blog" alt="" />
   </Layout>
 )
 

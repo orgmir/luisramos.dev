@@ -65,7 +65,7 @@ const IndexPage = ({
           slug="https://twitter.com/luisramos1337/status/1316981357076221953"
         />
       </ul>
-      <img src="/etphonehome.gif?s=index" />
+      <img src="/etphonehome.gif?s=index" alt="" />
     </Layout>
   )
 }
