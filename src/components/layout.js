@@ -35,7 +35,6 @@ const Layout = ({ location, children }) => {
         <main>{children}</main>
         <Footer />
       </div>
-      <img src="/etphonehome.gif" />
     </>
   )
 }

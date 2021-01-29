@@ -70,6 +70,7 @@ const AboutPage = ({ location }) => (
         </li>
       </ul>
     </div>
+    <img src="/etphonehome.gif?s=about" />
   </Layout>
 )
 
