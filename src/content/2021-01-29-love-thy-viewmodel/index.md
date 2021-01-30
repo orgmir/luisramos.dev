@@ -1,12 +1,11 @@
 ---
-draft: true
 date: 2021-01-29
 title: 'Love thy ViewModel'
 slug: /love-thy-viewmodel
 tags: ['Android', 'Mobile']
 ---
 
-Long are the days when android developers had to spend lots of time dealing with activity lifecycles when building their apps. Well, maybe not so long ago! Now there are a lot more tools to make our jobs easier, like the google provided [androidx.lifecycle](https://developer.android.com/reference/androidx/lifecycle/package-summary) package.
+Long gone are the days when android developers had to spend lots of time dealing with activity lifecycles when building their apps. Well, maybe not so long ago! Now there are a lot more tools to make our jobs easier, like the google provided [androidx.lifecycle](https://developer.android.com/reference/androidx/lifecycle/package-summary) package.
 
 Let's talk about ViewModels, why they are a good tool, and how to use it properly.
 
