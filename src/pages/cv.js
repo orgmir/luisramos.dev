@@ -10,6 +10,7 @@ import phoenixIcon from '../images/phoenix-icon.jpg'
 import mlIcon from '../images/mullenlowe-icon.png'
 import gleamIcon from '../images/gleam-icon.jpg'
 import blissIcon from '../images/bliss-icon.jpg'
+import streamotionIcon from '../images/streamotion-icon.png'
 
 const CvPage = ({ location }) => {
 	const updatedAt = new Date().toLocaleDateString(undefined, {
@@ -44,17 +45,40 @@ const CvPage = ({ location }) => {
 				</Job>
 
 				<Job
+					company="Streamotion"
+					image={streamotionIcon}
+					link="https://streamotion.com.au/"
+					title="Senior Mobile Software Developer"
+					location="Sydney"
+					dates="December 2020 - ★ Present"
+				>
+					<p>
+						Streamotion is a digital B2C streaming and technology business,
+						responsible for bringing entertainment streaming service{' '}
+						<a href="https://binge.com.au/">Binge</a>, and multi-sport streaming
+						service <a href="https://kayosports.com.au/">Kayo Sports</a>.
+					</p>
+					<p>
+						I work with in the android technology team, responsible for
+						developing Kayo Sports, Binge and a third yet-to-be-announced app.
+						Other reponsabilities are updating the apps to use latest android
+						technologies and foster the reuse of code across the three apps by
+						the wider team.
+					</p>
+				</Job>
+
+				<Job
 					company="Phoenix DX"
 					image={phoenixIcon}
 					link="https://phoenix-dx.com/"
 					title="Consultant Mobile Software Developer"
 					location="Sydney"
-					dates="March 2020 - ★ Present"
+					dates="March 2020 - December 2020"
 				>
 					<p>
 						Phoenix DX is a digital transformation company leveraging the{' '}
 						<a href="https://www.outsystems.com/">OutSystems</a> platform. I
-						work as a mobile software consultant, helping them with native
+						worked as a mobile software consultant, helping them with native
 						support for their <a href="https://cordova.apache.org">Cordova</a>{' '}
 						plugins.
 					</p>
