@@ -54,16 +54,15 @@ const CvPage = ({ location }) => {
 				>
 					<p>
 						Streamotion is a digital B2C streaming and technology business,
-						responsible for bringing entertainment streaming service{' '}
+						makers of entertainment streaming service{' '}
 						<a href="https://binge.com.au/">Binge</a>, and multi-sport streaming
 						service <a href="https://kayosports.com.au/">Kayo Sports</a>.
 					</p>
 					<p>
-						I work with in the android technology team, responsible for
-						developing Kayo Sports, Binge and a third yet-to-be-announced app.
-						Other reponsabilities are updating the apps to use latest android
-						technologies and foster the reuse of code across the three apps by
-						the wider team.
+						I joined the team to build a new yet-to-be-announced app. I am also
+						responsible for updating Kayo Sports and Binge to use the latest
+						android technologies, while fostering code reuse by the team across
+						the three apps.
 					</p>
 				</Job>
 
