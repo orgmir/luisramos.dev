@@ -119,7 +119,7 @@ module.exports = {
               }
             `,
             output: '/rss.xml',
-            title: 'Luis Ramos Blog',
+            title: 'Luis Ramos',
           },
         ],
       },
