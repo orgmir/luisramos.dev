@@ -59,10 +59,11 @@ const CvPage = ({ location }) => {
 						service <a href="https://kayosports.com.au/">Kayo Sports</a>.
 					</p>
 					<p>
-						I joined the team to build a new yet-to-be-announced app. I am also
-						responsible for updating Kayo Sports and Binge to use the latest
-						android technologies, while fostering code reuse by the team across
-						the three apps.
+						I joined the team to build a new yet-to-be-announced app. 
+						My responsibilities lie in upgrading the existing architecture 
+						to reuse more code across the apps, and also fostering a culture 
+						that enables the team to be more involved and productive while 
+						working on the code.
 					</p>
 				</Job>
 
@@ -316,7 +317,7 @@ const CvPage = ({ location }) => {
 							adding Android to my toolbelt
 						</li>
 						<li>
-							Self managed the projects I was reponsible for, communicating
+							Self managed the projects I was responsible for, communicating
 							frequently with other team members and management
 						</li>
 					</ul>
