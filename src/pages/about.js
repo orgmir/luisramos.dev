@@ -62,7 +62,7 @@ const AboutPage = ({ location }) => (
           </span>
         </li>
         <li>
-          Check out my <a href="https://http://github.com/orgmir">Github</a>
+          Check out my <a href="https://github.com/orgmir">Github</a>
         </li>
         <li>
           Check out my{' '}
