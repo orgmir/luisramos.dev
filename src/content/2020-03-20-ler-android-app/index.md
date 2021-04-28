@@ -2,9 +2,7 @@
 date: 2020-03-20
 title: 'Ler - An RSS Aggregator for Android!'
 slug: /ler-rss-aggregator-for-android
-tags:
-  - Android
-  - Mobile
+tags: ['android', 'mobile', 'ler']
 ---
 
 I have been working on a RSS aggregator app called _Ler_. Its available for Android, and you should [give it a try!](https://play.google.com/store/apps/details?id=app.luisramos.ler) It is the first app I design, develop and publish all by myself, so I am pretty proud of that!
