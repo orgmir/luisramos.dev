@@ -2,7 +2,7 @@
 date: 2021-06-29
 title: 'Xcode Format and Save using SwiftFormat and Automator'
 slug: /xcode-format-and-save
-tags: ['ios', 'mobile', 'xcode']
+tags: ['ios', 'mobile', 'xcode', 'kmm']
 ---
 
 Lost are the days where we could modify and extend Xcode to do our bidding (RIP Alcatraz). We have some room to work with source editor extensions, but adding a macro that formats our Swift code and then saves the file is out of reach. Or is it?

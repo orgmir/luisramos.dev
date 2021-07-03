@@ -204,6 +204,10 @@
 
 /** Override prism.js theme*/
 
+.markdown pre[class*='language-'] {
+  @apply sm:rounded;
+}
+
 .markdown pre {
   -webkit-font-feature-settings: 'liga' on, 'calt' on;
   -webkit-font-smoothing: antialiased;
@@ -226,7 +230,6 @@
 }
 
 .markdown :not(pre) > code[class*='language-'] {
-  @apply text-sm;
   @apply text-black;
   @apply bg-gray-200;
 }
