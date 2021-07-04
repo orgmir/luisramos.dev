@@ -9,11 +9,11 @@ tags:
   - mobile
 ---
 
-I have recently started working on a project that uses Swift2.0! I have been using Obj-C for the past 3 years, and when Swift came I wasn't one of the early adopters. Problems with the language and with SourceKit always crashing in XCode 6 didn't make for a good dev enviroment. Now with the 2.0 released to the wild, the promisse of open source and XCode 7, Swift is good to go!
+I have recently started working on a project that uses Swift2.0! I have been using Obj-C for the past 3 years, and when Swift came I wasn't one of the early adopters. Problems with the language and with SourceKit always crashing in XCode 6 didn't make for a good dev environment. Now with the 2.0 released to the wild, the promise of open source and XCode 7, Swift is good to go!
 
 One of the first problems I had is one that happens to many iOS developers that use extensions/categories in their projects: How do I add a variable (static or not) to an extension?
 
-Since I seem to always be googling for this one, I'll log it here for future convinience.
+Since I seem to always be googling for this one, I'll log it here for future convenience.
 
 ### Static Variables
 

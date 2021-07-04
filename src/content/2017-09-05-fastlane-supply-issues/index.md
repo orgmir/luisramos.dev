@@ -8,7 +8,7 @@ tags:
   - mobile
 ---
 
-Ever since I found out about [`fastlane`][fastlane], I've been using it to deploy Android and iOS apps. It's amazing how streamlined things can get: it saves you a bunch of time when deploying a release; it supports integrations with your favourite distribution platforms (yay Crashlytics); and you can easily copy the setup from one app to the other! Couldn't be happier with it.
+Ever since I found out about [`fastlane`][fastlane], I've been using it to deploy Android and iOS apps. It's amazing how streamlined things can get: it saves you a bunch of time when deploying a release; it supports integrations with your favorite distribution platforms (yay Crashlytics); and you can easily copy the setup from one app to the other! Couldn't be happier with it.
 
 Here's a tip for the Android devs out there using [`fastlane`][fastlane], add this to your `before_all` step:
 

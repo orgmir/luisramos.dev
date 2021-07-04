@@ -36,7 +36,7 @@ class ProfileActivity: Activity() {
 }
 ```
 
-The ViewModel is provided to us bound to the activity lifecycle. The LiveData objects will hold the lastest data set. The activity will observe both of these LiveData objects when created, always getting the latest data available. Life is good!
+The ViewModel is provided to us bound to the activity lifecycle. The LiveData objects will hold the latest data set. The activity will observe both of these LiveData objects when created, always getting the latest data available. Life is good!
 
 With this, we can establish a one way flow of data, from the ViewModel to the activity and its views. This makes unit testing the ViewModel very easy.
 
@@ -88,13 +88,13 @@ class CyberHackViewModel(hack: CyberHack): ViewModel() {
 
 In the previous snippet, there is no benefit in using a ViewModel for this mapping. A data class fits this situation much better.
 
-Whenever you see yourself creating a ViewModel using its constructor instead of a ViewModelProvider, stop! The only exception to this is, of cource, writing unit tests.
+Whenever you see yourself creating a ViewModel using its constructor instead of a ViewModelProvider, stop! The only exception to this is, of course, writing unit tests.
 
 ## Read the manual before driving
 
 Always a good idea to read the documentation for a class before you start using it in your code. Pulled from the ViewModel javadoc:
 
-> Thee purpose of the ViewModel is to acquire and keep the information that is necessary for an Activity or a Fragment. The Activity or the Fragment should be able to observe changes in the ViewModel. ViewModels usually expose this information via `LiveData` or Android Data Binding. You can also use any observability construct from you favorite framework.
+> Thee purpose of the ViewModel is to acquire and keep the information that is necessary for an Activity or a Fragment. The Activity or the Fragment should be able to observe changes in the ViewModel. ViewModels usually expose this information via `LiveData` or Android Data Binding. You can also use any `Observer` pattern from you favorite framework.
 
 ViewModel's only responsibility is to manage the data for the UI. It **should never** access your view hierarchy or hold a reference back to the Activity or the Fragment.
 

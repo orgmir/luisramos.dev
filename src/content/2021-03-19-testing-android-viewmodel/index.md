@@ -416,6 +416,6 @@ class CyberImplantListViewModelTests {
 
 ## Wrapping up
 
-We started with a pretty basic view model for showing a list of cybernetic implants to the user, and the respective test coverage. We then added coroutines, some logic to handle a loading state, and possible api errors. Then we wrapped it up with a "navigate to detail" example.
+We started with a pretty basic view model for showing a list of cybernetic implants to the user, and the respective test coverage. We then added coroutines, some logic to handle a loading state, and possible API errors. Then we wrapped it up with a "navigate to detail" example.
 
 Hope these examples where useful to you in some way. I really enjoy writing this, so if you want to see more examples or just want to chat about android, reach out!

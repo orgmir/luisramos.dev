@@ -2,7 +2,7 @@
 date: 2021-07-02
 title: 'Marrying KMM and Swift with Sourcery'
 slug: /marrying-kmm-and-swift-with-sourcery
-tags: ['ios', 'mobile', 'kotlin', 'swift', 'xcode', 'kmm']
+tags: ['iOS', 'mobile', 'Kotlin', 'swift', 'Xcode', 'KMM']
 ---
 
 My bet is that Kotlin Multiplatform Mobile is here to stay. It offers a great way to build mobile apps natively that share code, without compromising the best each platform has to offer. Of course, it comes with its own trade-offs.
@@ -11,7 +11,7 @@ Let me tell you how you can smooth out some of the quirks using the Swift meta-p
 
 ## The problem: Kotlin extensions in Swift
 
-The [interop](https://kotlinlang.org/docs/native-objc-interop.html) between Swift and Kotlin uses Objective-C as a medium, and it doesn't support Kotlin extensions has one would expect. An extension function like:
+The [interoperability](https://kotlinlang.org/docs/native-objc-interop.html) between Swift and Kotlin uses Objective-C as a medium, and it doesn't support Kotlin extensions has one would expect. An extension function like:
 
 ```kotlin
 // file name is RocketExtensions.kt
@@ -39,10 +39,10 @@ The way Kotlin/Native generates the Objective-C header files for our extensions 
 
 One library that you need to be aware if you are building iOS apps is [Sourcery](https://github.com/krzysztofzablocki/Sourcery) from [@merowing\_](https://twitter.com/merowing_). The description says "Meta-programming for Swift, stop writing boilerplate code." and I am totally there for it.
 
-I have only started to use it recently, but the flexability you gain is truly incredible. How does this help with our extensions situation? Well, we can write a template that Sourcery can use to generate actual extensions in Swift, shadowing the extension classes from our shared framework.
+I have only started to use it recently, but the flexibility you gain is truly incredible. How does this help with our extensions situation? Well, we can write a template that Sourcery can use to generate actual extensions in Swift, shadowing the extension classes from our shared framework.
 
 <div class="blockquote info">
-If you are new to Sourcery, you can follow the <a href="https://github.com/krzysztofzablocki/Sourcery#installation">instalation guide</a> to set it up, and I found <a href="https://www.hackingwithswift.com/articles/85/introduction-to-sourcery">this article</a> by Paul Hudson to be a great introduction.
+If you are new to Sourcery, you can follow the <a href="https://github.com/krzysztofzablocki/Sourcery#installation">installation guide</a> to set it up, and I found <a href="https://www.hackingwithswift.com/articles/85/introduction-to-sourcery">this article</a> by Paul Hudson to be a great introduction.
 </div>
 
 ### Speed bump
@@ -109,7 +109,7 @@ extension {{ extensionName }} {
 ```
 
 <div class="blockquote info">
-Sentcil is pretty hard to read for the uninitiated. But don't be intimidated, you can checkout the <a href="https://stencil.fuller.li/en/latest/templates.html#">language overview</a> to get a good graps of what it can do, and refer to the <a href="https://cdn.rawgit.com/krzysztofzablocki/Sourcery/master/docs/writing-templates.html">Sourcercy documentation</a> to get an idea of what is available to you.
+Sentcil is pretty hard to read for the uninitiated. But don't be intimidated, you can checkout the <a href="https://stencil.fuller.li/en/latest/templates.html#">language overview</a> to get a good grasp of what it can do, and refer to the <a href="https://cdn.rawgit.com/krzysztofzablocki/Sourcery/master/docs/writing-templates.html">Sourcery documentation</a> to get an idea of what is available to you.
 </div>
 
 This template makes some safe assumptions regarding our shared types:
@@ -119,7 +119,7 @@ This template makes some safe assumptions regarding our shared types:
 - For the previous to work, we ignore methods without parameters, like `init()`
 - We can skip methods tagged with `obsoleted`
 
-The other thing of note is that `Optional` types are extended correctly with type coersion, otherwise we would generate `extension Rocket? {}` which doesn't compile.
+The other thing of note is that `Optional` types are extended correctly with a where clause, otherwise we would generate `extension Rocket? {}` which doesn't compile.
 
 Using our previous `Rocket` extension as an example, here is what we end up with:
 
@@ -150,7 +150,7 @@ object Theme {
 }
 ```
 
-For iOS I wrote a template that creates an extension to `SwiftUI.Color` with the theme colors. Now everytime you add a new color in the `Theme` object, you automatically get the extensions in Swift. We end up with a file like:
+For iOS I wrote a template that creates an extension to `SwiftUI.Color` with the theme colors. Now every time you add a new color in the `Theme` object, you automatically get the extensions in Swift. We end up with a file like:
 
 ```swift
 import SwiftUI
@@ -192,7 +192,7 @@ extension Color {
 
 ## Conclusion
 
-We made use of a Soucercy template to generate code that makes our Kotlin extensions actually extend the correct Swift classes. We also used the Swift CLI to generate an interface of our shared framework that Sourcery could read. And we set it up so it runs everytime Xcode builds, so changes in the shared framework are automatically propagated to Swift.
+We made use of a Sourcery template to generate code that makes our Kotlin extensions actually extend the correct Swift classes. We also used the Swift CLI to generate an interface of our shared framework that Sourcery could read. And we set it up so it runs every time Xcode builds, so changes in the shared framework are automatically propagated to Swift.
 
 Integrating Sourcery early into a KMM project pays off in the short and in the long run. With this setup, you avoid writing a lot of boilerplate code and bridge the gap between Kotlin and Swift a bit better. Best part is that you can keep adding templates to fit your usage and make it easy to keep switching contexts.
 

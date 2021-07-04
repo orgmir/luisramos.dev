@@ -10,7 +10,7 @@ tags:
 
 Recently I was working in a project that require me to show a local notification. And for the love of XCode, the app would not show an alert! I was at a loss!
 
-Beggining with iOS 10, the iOS notification framework was revamped to unify both remote and local notifications. This threw me into a loop while trying to figure out the problem. The only thing I had to go by was an error message that poped up when adding the notification to UNUserNotificationCenter:
+Beginning with iOS 10, the iOS notification framework was revamped to unify both remote and local notifications. This threw me into a loop while trying to figure out the problem. The only thing I had to go by was an error message that popped up when adding the notification to UNUserNotificationCenter:
 
 ```objc
 Adding notification request failed with error: Error Domain=NSCocoaErrorDomain Code=4097 "connection to service named com.apple.usernotifications.usernotificationservice" UserInfo={NSDebugDescription=connection to service named com.apple.usernotifications.usernotificationservice}

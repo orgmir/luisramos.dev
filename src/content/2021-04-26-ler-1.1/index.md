@@ -15,7 +15,7 @@ I replaced the usage of `Fragment` with a custom `Screen`s navigation implementa
 
 I use this app as a test bed for new frameworks and libraries. These changes didn't add anything to the feature set, but they felt really good! And I learned how to build an app without relying on fragments.
 
-One thing I am still learning is how to cut scope so I can finish something. I had to give up on the idea of "cleaning up" the code base. By that I mean adding missing tests and restructure the files to make more sense to some other dev. I realised that I would not be able to muster the energy to do it, so the project is now [open source](https://github.com/Orgmir/ler-android) for everyone to check out.
+One thing I am still learning is how to cut scope so I can finish something. I had to give up on the idea of "cleaning up" the code base. By that I mean adding missing tests and restructure the files to make more sense to some other dev. I realized that I would not be able to muster the energy to do it, so the project is now [open source](https://github.com/Orgmir/ler-android) for everyone to check out.
 
 ## Version 1.1 is out!
 

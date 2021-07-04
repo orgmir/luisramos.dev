@@ -8,9 +8,9 @@ tags:
   - snippets
 ---
 
-Recently I have taken a renewed interest into this blog. I have revamped the theme (mostly stealing it from my friend's blog, [check it out](https://accidental.dev/)) and now I'm focusing on writing more regularly. I noticed that a lot of my code snippets are just sitting quietly on Github or Gitlab and could use a post or two to describe why I made them!
+Recently I have taken a renewed interest into this blog. I have revamped the theme (mostly stealing it from my friend's blog, [check it out](https://accidental.dev/)) and now I'm focusing on writing more regularly. I noticed that a lot of my code snippets are just sitting quietly on GitHub or Gitlab and could use a post or two to describe why I made them!
 
-The first one I want to talk about is a UIView extension that I always use in my iOS projects. I always prefer to build my interface programatically, so that lead me to search for a few auto layout libraries.
+The first one I want to talk about is a UIView extension that I always use in my iOS projects. I always prefer to build my interface programmatically, so that lead me to search for a few auto layout libraries.
 
 The issue I have with using an auto layout library is that if a new developer joins the team, that person will need to deal with my choice of library that usually comes with its own set of idioms and abstractions. My experience is that people enjoy building layouts differently and the preference will always be for some other library! Also, the added abstractions leave me a bit too far away from the auto layout specifics.
 

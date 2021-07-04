@@ -15,9 +15,9 @@ I know what you are thinking, _another_ RSS feed app? Aren't there billions of t
 
 ### Twitter is a time sink
 
-I spend too much time on twitter. I checked my phone usage settings for apps, and twitter is always number one on the list, toppling YouTube (!!) and WhatsApp. I though I watched a lot of Youtube, but aparently, on a very boring day, I accumulated _4 hours_ of twitter usage...
+I spend too much time on twitter. I checked my phone usage settings for apps, and twitter is always number one on the list, toppling YouTube (!!) and WhatsApp. I though I watched a lot of YouTube, but apparently, on a very boring day, I accumulated _4 hours_ of twitter usage...
 
-So I looked into Googles digital wellbeing app, and turned on a 30 minute timeout for Twitter. And it works! Some days, I don't even reach the timeout. Unfortunatly, this also meant that a lot of the blogs I read wouldn't reach me as well.
+So I looked into Googles digital well-being app, and turned on a 30 minute timeout for Twitter. And it works! Some days, I don't even reach the timeout. Unfortunately, this also meant that a lot of the blogs I read wouldn't reach me as well.
 
 And there you have it. I took the time I was wasting and built this app!
 
@@ -25,10 +25,10 @@ And there you have it. I took the time I was wasting and built this app!
 
 The app name is the portuguese word for _reading_. I did a search and it seems nobody claimed it, so why not? The main features that I have built so far:
 
-- You can subscribe to RSS feeds (crazy I know). You can manually type in a website adress, or you can share from the browser to the app!
+- You can subscribe to RSS feeds (crazy I know). You can manually type in a website address, or you can share from the browser to the app!
 - You can filter out articles that you already read, or just show articles from one feed.
 - You can swipe an article to toggle it read, or mark all articles in a feed at once!
-- Feeds will be checked for updates every hour automagically.
+- Feeds will be checked for updates every hour auto-magically.
 
 Articles currently open in the browser. I toyed with the idea of having a built in reader, but that seemed overkill for what I wanted to do. I already used the browser to do most of my reading anyway.
 
@@ -38,7 +38,7 @@ I am pretty proud of how it turned out, despite not being great at UI design, I 
 
 Not only am I using this app to avoid using twitter all the time, I will also use it as a showcase project. Hence, my plan in the next weeks is to write a bunch of tests, clean up the folder structure, and open source it.
 
-So far, I have not worked in an app that had their source open, so most often when talking about my work I can't provide examples. I applied all my knowledge and tried to build the simples app I could, while still being a good example of how I would build an app.
+So far, I have not worked in an app that had their source open, so most often when talking about my work I can't provide examples. I applied all my knowledge and tried to build the simplest app I could, while still being a good example of how I would build an app.
 
 My plan is to also write about android development, while using the app as an example. I made some architecture choices that I can talk about, since I haven't found a lot of written examples online.
 

@@ -24,7 +24,7 @@ Note that you could also claim the `groupId` that matches your project hosting, 
 After you have opened a new project ticket, you need to prove that you own the domain you claimed. You can either:
 
 1. Add a TXT record to your DNS referencing the url to the JIRA ticket you created (fastest)
-2. Setup a redirect to your github page
+2. Setup a redirect to your GitHub page
 
 I went with the first option, and since every DNS provider differs I won't go into specifics. Some googling on how to add a TXT record for your DNS provider should get you there.
 
@@ -42,9 +42,9 @@ Once the upload is done, go ahead and log in to https://oss.sonatype.org using y
 
 ![Nexus Repository Manager](nexus_repository_manager.png)
 
-Select `Staging Repositories` on the side bar, and you should see a list with the repository for your library. Select the repo, and press `Close` on the top bar. This will perform some validation on Sonatype's side, and once the status updates and the repository is tagged as closed, select the repository again and press `Release`.
+Select `Staging Repositories` on the side bar, and you should see a list with the repository for your library. Select the repository, and press `Close` on the top bar. This will perform some validation on Sonatype's side, and once the status updates and the repository is tagged as closed, select the repository again and press `Release`.
 
-If you use a plugin, the upload step will probably try to close and release the staging repository. Loggin in to Nexus Repository Manager should only be needed when you are releasing for the first time, or if you use a script like me.
+If you use a plugin, the upload step will probably try to close and release the staging repository. Logging in to Nexus Repository Manager should only be needed when you are releasing for the first time, or if you use a script like me.
 
 You can now update on your JIRA ticket that the repository has been released. This will let Sonatype know, and they will trigger a sync with maven central, so your library can show when searching in [search.maven.org](https://search.maven.org). This step should is also only needed the first time you are releasing.
 
