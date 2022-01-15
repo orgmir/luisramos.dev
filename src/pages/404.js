@@ -20,7 +20,6 @@ const NotFoundPage = ({ location }) => (
         you think something is wrong!
       </p>
     </div>
-    <img src="/etphonehome.gif?s=404" alt="" />
   </Layout>
 )
 

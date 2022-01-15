@@ -64,8 +64,12 @@ const IndexPage = ({
           subtitle="A clok for your macOS dock"
           slug="https://twitter.com/luisramos1337/status/1316981357076221953"
         />
+        <ProjectListing
+          title="👾 Pico8 games"
+          subtitle="Sometimes I build tiny games in pico8"
+          slug="/games"
+        />
       </ul>
-      <img src="/etphonehome.gif?s=index" alt="" />
     </Layout>
   )
 }

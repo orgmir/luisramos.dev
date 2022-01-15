@@ -59,11 +59,11 @@ const CvPage = ({ location }) => {
 						service <a href="https://kayosports.com.au/">Kayo Sports</a>.
 					</p>
 					<p>
-						I joined the team to build a new yet-to-be-announced app. 
-						My responsibilities lie in upgrading the existing architecture 
-						to reuse more code across the apps, and also fostering a culture 
-						that enables the team to be more involved and productive while 
-						working on the code.
+						I joined the team to build a new yet-to-be-announced app. My
+						responsibilities lie in upgrading the existing architecture to reuse
+						more code across the apps, and also fostering a culture that enables
+						the team to be more involved and productive while working on the
+						code.
 					</p>
 				</Job>
 
@@ -323,7 +323,6 @@ const CvPage = ({ location }) => {
 					</ul>
 				</Job>
 			</div>
-			<img src="/etphonehome.gif?s=cv" alt="" />
 		</Layout>
 	)
 }

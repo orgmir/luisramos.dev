@@ -10,7 +10,6 @@ const Post = ({ title, date, html, slug }) => (
 		</h1>
 		<h2 className="text-center text-gray-700 text-sm mb-8">{date}</h2>
 		<div className="markdown" dangerouslySetInnerHTML={{ __html: html }} />
-		<img src={`/etphonehome.gif?s=${slug}`} alt="" />
 	</div>
 )
 
