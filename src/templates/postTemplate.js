@@ -33,7 +33,7 @@ const FriendlyCallout = ({ postRelativePath }) => (
       <div class="flex-col px-4 py-4">
         <h4 className="text-base mb-2">Thank you for reading</h4>
         <p class="text-sm opacity-75 mb-4">
-          Please get in touch if you have a suggestion, spot an issue or want to
+          Please get in touch if you have a suggestion, find an issue or want to
           say hello.
         </p>
         <div class="flex-row">
@@ -51,12 +51,18 @@ const FriendlyCallout = ({ postRelativePath }) => (
           )}
           <a href="mailto:luis.ramos@hey.com">
             <button class="text-sm rounded text-black border-2 border-gray-300 py-1 px-2 mr-4">
-              📧 Email me
+              <span role="img" aria-label="email">
+                📧
+              </span>{' '}
+              Email me
             </button>
           </a>
           <a href="https://twitter.com/luisramos1337">
             <button class="text-sm rounded border-2 border-blue-200 text-blue-600 py-1 px-2">
-              🐥 Tweet at me!
+              <span role="img" aria-label="birb">
+                🐥
+              </span>{' '}
+              Tweet at me!
             </button>
           </a>
         </div>
