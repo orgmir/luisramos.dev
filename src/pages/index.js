@@ -1,9 +1,9 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/layout'
-import SEO from '../components/seo'
+import Seo from '../components/seo'
 import Face from '../components/face'
-import LFW from '../components/lfw'
+import Lfw from '../components/lfw'
 import PostListing from '../components/post-listing'
 
 const ProjectListing = ({ title, subtitle, slug }) => (
@@ -32,9 +32,9 @@ const IndexPage = ({
   ))
   return (
     <Layout location={location}>
-      <SEO title="Olá" />
+      <Seo title="Olá" />
       <Face />
-      <LFW />
+      <Lfw />
       <div className="mx-4 pb-1 flex border-b-2 border-orange-300">
         <h2 className="text-2xl font-medium">Latest posts</h2>
         <Link

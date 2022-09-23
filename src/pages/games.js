@@ -1,11 +1,11 @@
 import React from 'react'
 
 import Layout from '../components/layout'
-import SEO from '../components/seo'
+import Seo from '../components/seo'
 
 const GamesPage = ({ location }) => (
   <Layout location={location}>
-    <SEO title="Games" />
+    <Seo title="Games" />
     <div className="markdown">
       <div class="px-4">
         <h1 class="text-5xl mb-2">Games</h1>

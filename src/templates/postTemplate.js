@@ -2,14 +2,14 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Post from '../components/post'
 import Layout from '../components/layout'
-import SEO from '../components/seo'
+import Seo from '../components/seo'
 
 export default function PostTemplate({ location, data }) {
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
   return (
     <Layout location={location}>
-      <SEO title={frontmatter.title} slug={frontmatter.slug} />
+      <Seo title={frontmatter.title} slug={frontmatter.slug} />
       {frontmatter.draft && (
         <div class="blockquote alert">
           <i>You are looking at a draft post.</i>

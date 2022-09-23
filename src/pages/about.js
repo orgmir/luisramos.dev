@@ -3,11 +3,11 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import Hello from '../components/hello'
-import SEO from '../components/seo'
+import Seo from '../components/seo'
 
 const AboutPage = ({ location }) => (
   <Layout location={location}>
-    <SEO title="About" />
+    <Seo title="About" />
     <Hello />
     <div className="markdown mt-6">
       <p>

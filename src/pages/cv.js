@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
-import SEO from '../components/seo'
+import Seo from '../components/seo'
 import cfsIcon from '../images/cfs-icon.jpg'
 import mfIcon from '../images/mf-icon.jpg'
 import lrIcon from '../images/lr-icon.jpg'
@@ -21,7 +21,7 @@ const CvPage = ({ location }) => {
   })
   return (
     <Layout location={location}>
-      <SEO title="CV" />
+      <Seo title="CV" />
       <div class="px-4">
         <h1 class="text-5xl mb-2">Curriculum Vitae</h1>
         <time class="text-base italic opacity-50">

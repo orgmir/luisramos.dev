@@ -1,6 +1,6 @@
 import React from 'react'
 
-const LFW = () => (
+const Lfw = () => (
   <div className="blockquote info mt-6">
     <span className="text-gray-900 font-bold">Building an app?</span>
     <p className="mt-2 text-gray-900 ">
@@ -17,4 +17,4 @@ const LFW = () => (
   </div>
 )
 
-export default LFW
+export default Lfw

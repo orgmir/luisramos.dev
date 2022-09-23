@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
-import SEO from '../components/seo'
+import Seo from '../components/seo'
 import { graphql } from 'gatsby'
 import PostListing from '../components/post-listing'
 
@@ -11,7 +11,7 @@ const BlogPage = ({
   },
 }) => (
   <Layout location={location}>
-    <SEO title="Blog" />
+    <Seo title="Blog" />
     <h1 className="text-5xl px-4 mb-6">Posts</h1>
     <ul>
       {edges.map(({ node: { frontmatter } }) => (

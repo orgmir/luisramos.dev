@@ -1,12 +1,12 @@
 import React from 'react'
 
 import Layout from '../components/layout'
-import SEO from '../components/seo'
+import Seo from '../components/seo'
 import { Link } from 'gatsby'
 
 const NotFoundPage = ({ location }) => (
   <Layout location={location}>
-    <SEO title="404: Not found" />
+    <Seo title="404: Not found" />
     <div className="markdown">
       <h1 className="text-center text-gray-900" style={{ fontSize: '4rem' }}>
         404
