@@ -1,10 +1,10 @@
-'use strict';
+"use strict";
 
 /*eslint-env node*/
-const fs = require('fs');
-const path = require('path');
-const Jimp = require('jimp');
-const twitterCard = require('wasm-twitter-card');
+const fs = require("fs");
+const path = require("path");
+const Jimp = require("jimp");
+const twitterCard = require("wasm-twitter-card");
 
 const WIDTH = 1200;
 const HEIGHT = 630;
@@ -21,50 +21,76 @@ async function generateBackground(background) {
 }
 
 function validateFontSize(fontSize, fieldName) {
-  if (isNaN(fontSize) || parseInt(Number(fontSize)) != fontSize || isNaN(parseInt(fontSize, 10))) {
+  if (
+    isNaN(fontSize) ||
+    parseInt(Number(fontSize)) != fontSize ||
+    isNaN(parseInt(fontSize, 10))
+  ) {
     throw new Error(`Please pass an integer as ${fieldName}`);
   }
 }
 
 function hexToRgb(hex) {
-  const hexCode = hex.replace(/^#/, '');
+  const hexCode = hex.replace(/^#/, "");
   const bigint = parseInt(hexCode, 16);
-  const r = bigint >> 16 & 255;
-  const g = bigint >> 8 & 255;
+  const r = (bigint >> 16) & 255;
+  const g = (bigint >> 8) & 255;
   const b = bigint & 255;
   return [r, g, b];
 }
 
-module.exports = ({ markdownNode }, {
-  title,
-  author,
-  background = '#000000',
-  fontColor = '#ffffff',
-  titleFontSize = 96,
-  subtitleFontSize = 60,
-  fontStyle = 'monospace',
-  separator = '|',
-  fontFile
-}) => {
+module.exports = (
+  { markdownNode },
+  {
+    title,
+    author,
+    background = "#000000",
+    fontColor = "#ffffff",
+    titleFontSize = 96,
+    subtitleFontSize = 60,
+    fontStyle = "monospace",
+    separator = "|",
+    fontFile,
+  }
+) => {
   const post = markdownNode.frontmatter;
   if (!markdownNode.fields) return;
-  validateFontSize(titleFontSize, 'titleFontSize');
-  validateFontSize(subtitleFontSize, 'subtitleFontSize');
+  validateFontSize(titleFontSize, "titleFontSize");
+  validateFontSize(subtitleFontSize, "subtitleFontSize");
 
-  const output = path.join('./public', post.slug, 'twitter-card.jpg');
+  const output = path.join("./public", post.slug, "twitter-card.jpg");
 
-  let formattedDetails = '';
+  let formattedDetails = "";
   if (title || author) {
-    formattedDetails = title && author ? `${title} ${separator} ${author}` : title || author;
+    formattedDetails =
+      title && author ? `${title} ${separator} ${author}` : title || author;
   }
 
-  const fontToUint8Array = fontFile ? fs.readFileSync(require.resolve(fontFile), null) : new Uint8Array();
+  const fontToUint8Array = fontFile
+    ? fs.readFileSync(require.resolve(fontFile), null)
+    : new Uint8Array();
 
   if (fontFile) {
-    fontStyle = 'custom';
+    fontStyle = "custom";
   }
 
-  const buffer = twitterCard.generate_text(post.title, formattedDetails, titleFontSize, subtitleFontSize, hexToRgb(fontColor), fontStyle, fontToUint8Array);
+  const buffer = twitterCard.generate_text(
+    post.title,
+    formattedDetails,
+    titleFontSize,
+    subtitleFontSize,
+    hexToRgb(fontColor),
+    fontStyle,
+    fontToUint8Array
+  );
 
-  return Promise.all([generateBackground(background), writeTextToCard(buffer)]).then(([base, text]) => base.composite(text, 0, 0)).then(image => image.writeAsync(output).then(() => console.log('Generated Twitter Card: ', output)).catch(err => err)).catch(console.error);
+  return Promise.all([generateBackground(background), writeTextToCard(buffer)])
+    .then(([base, text]) => base.composite(text, 0, 0))
+    .then(image =>
+      image
+        .writeAsync(output)
+        .then(() => console.log("Generated Twitter Card: ", output))
+        .catch(err => err)
+    )
+    .catch(console.error);
 };

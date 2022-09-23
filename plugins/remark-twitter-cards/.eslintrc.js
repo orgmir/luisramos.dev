@@ -3,9 +3,9 @@ module.exports = {
     es6: true,
     node: true,
   },
-  extends: ['eslint:recommended', 'prettier'],
-  parser: 'babel-eslint',
+  extends: ["eslint:recommended", "prettier"],
+  parser: "babel-eslint",
   rules: {
-    'no-console': 0,
+    "no-console": 0,
   },
-}
+};

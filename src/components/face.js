@@ -8,35 +8,16 @@ const Face = () => (
     <div className="bg-white text-lg">
       <Hello />
       <p className="mt-6 leading-7 px-4">
-        I'm a freelance mobile developer. I{' '}
+        I am a freelance software developer helping companies develop their
+        mobile apps. I work on both ends of the spectrum, writing native code
+        for iOS and Android. Seriously, I do both iOS and Android at the same
+        time!{' '}
         <a
           className="underline text-blue-500 font-normal hover:text-blue-700"
-          href="https://github.com/orgmir"
+          href="mailto:luis.ramos@hey.com"
         >
-          build
-        </a>{' '}
-        native apps for iOS and Android and{' '}
-        <Link
-          className="underline text-blue-500 font-normal hover:text-blue-700"
-          to="/blog"
-        >
-          write
-        </Link>{' '}
-        about what I learn. Check out my{' '}
-        <a
-          className="underline text-blue-500 font-normal hover:text-blue-700"
-          href="https://github.com/orgmir"
-        >
-          contributions
-        </a>{' '}
-        to open source and my{' '}
-        <Link
-          className="underline text-blue-500 font-normal hover:text-blue-700"
-          to="/blog"
-        >
-          personal projects
-        </Link>
-        .
+          > Get in touch!
+        </a>
       </p>
       <p className="mt-6 leading-7 px-4">
         Learn more{' '}

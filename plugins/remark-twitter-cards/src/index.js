@@ -1,21 +1,21 @@
 /*eslint-env node*/
-const fs = require('fs')
-const path = require('path')
-const Jimp = require('jimp')
-const twitterCard = require('wasm-twitter-card')
+const fs = require("fs");
+const path = require("path");
+const Jimp = require("jimp");
+const twitterCard = require("wasm-twitter-card");
 
-const WIDTH = 1200
-const HEIGHT = 630
+const WIDTH = 1200;
+const HEIGHT = 630;
 
 async function writeTextToCard(buffer) {
-  return await new Jimp({ data: buffer, width: WIDTH, height: HEIGHT })
+  return await new Jimp({ data: buffer, width: WIDTH, height: HEIGHT });
 }
 
 async function generateBackground(background) {
   if (background.match(/[0-9A-Fa-f]{6}/g)) {
-    return await new Jimp(WIDTH, HEIGHT, background)
+    return await new Jimp(WIDTH, HEIGHT, background);
   }
-  return Jimp.read(background)
+  return Jimp.read(background);
 }
 
 function validateFontSize(fontSize, fieldName) {
@@ -24,17 +24,17 @@ function validateFontSize(fontSize, fieldName) {
     parseInt(Number(fontSize)) != fontSize ||
     isNaN(parseInt(fontSize, 10))
   ) {
-    throw new Error(`Please pass an integer as ${fieldName}`)
+    throw new Error(`Please pass an integer as ${fieldName}`);
   }
 }
 
 function hexToRgb(hex) {
-  const hexCode = hex.replace(/^#/, '')
-  const bigint = parseInt(hexCode, 16)
-  const r = (bigint >> 16) & 255
-  const g = (bigint >> 8) & 255
-  const b = bigint & 255
-  return [r, g, b]
+  const hexCode = hex.replace(/^#/, "");
+  const bigint = parseInt(hexCode, 16);
+  const r = (bigint >> 16) & 255;
+  const g = (bigint >> 8) & 255;
+  const b = bigint & 255;
+  return [r, g, b];
 }
 
 module.exports = (
@@ -42,34 +42,34 @@ module.exports = (
   {
     title,
     author,
-    background = '#000000',
-    fontColor = '#ffffff',
+    background = "#000000",
+    fontColor = "#ffffff",
     titleFontSize = 96,
     subtitleFontSize = 60,
-    fontStyle = 'monospace',
-    separator = '|',
+    fontStyle = "monospace",
+    separator = "|",
     fontFile,
   }
 ) => {
-  const post = markdownNode.frontmatter
-  if (!markdownNode.fields) return
-  validateFontSize(titleFontSize, 'titleFontSize')
-  validateFontSize(subtitleFontSize, 'subtitleFontSize')
+  const post = markdownNode.frontmatter;
+  if (!markdownNode.fields) return;
+  validateFontSize(titleFontSize, "titleFontSize");
+  validateFontSize(subtitleFontSize, "subtitleFontSize");
 
-  const output = path.join('./public', post.slug, 'twitter-card.jpg')
+  const output = path.join("./public", post.slug, "twitter-card.jpg");
 
-  let formattedDetails = ''
+  let formattedDetails = "";
   if (title || author) {
     formattedDetails =
-      title && author ? `${title} ${separator} ${author}` : title || author
+      title && author ? `${title} ${separator} ${author}` : title || author;
   }
 
   const fontToUint8Array = fontFile
     ? fs.readFileSync(require.resolve(fontFile), null)
-    : new Uint8Array()
+    : new Uint8Array();
 
   if (fontFile) {
-    fontStyle = 'custom'
+    fontStyle = "custom";
   }
 
   const buffer = twitterCard.generate_text(
@@ -80,15 +80,15 @@ module.exports = (
     hexToRgb(fontColor),
     fontStyle,
     fontToUint8Array
-  )
+  );
 
   return Promise.all([generateBackground(background), writeTextToCard(buffer)])
     .then(([base, text]) => base.composite(text, 0, 0))
     .then(image =>
       image
         .writeAsync(output)
-        .then(() => console.log('Generated Twitter Card: ', output))
+        .then(() => console.log("Generated Twitter Card: ", output))
         .catch(err => err)
     )
-    .catch(console.error)
-}
+    .catch(console.error);
+};
