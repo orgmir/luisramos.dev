@@ -38,9 +38,9 @@ const AboutPage = ({ location }) => (
       </p>
       <p>
         My latest language focus are Kotlin and Swift, with some Javascript on
-        the side. I believe that Kotlin Multiplatform Mobile, along with SwiftUI and
-        Jetpack Compose, will change the way we build apps for all platforms!
-        Get in touch if you want to talk to me about it ;)
+        the side. I believe that Kotlin Multiplatform Mobile, along with SwiftUI
+        and Jetpack Compose, will change the way we build apps for all
+        platforms! Get in touch if you want to talk to me about it ;)
       </p>
       <h2>
         <span role="img" aria-label="link">

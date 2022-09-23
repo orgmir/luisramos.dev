@@ -72,7 +72,7 @@ const FriendlyCallout = ({ postRelativePath }) => (
 )
 
 export const pageQuery = graphql`
-  query($path: String!) {
+  query ($path: String!) {
     markdownRemark(frontmatter: { slug: { eq: $path } }) {
       html
       frontmatter {

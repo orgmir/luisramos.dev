@@ -61,16 +61,19 @@ const CvPage = ({ location }) => {
           </p>
           <ul>
             <li>
-              Architected and built a kotlin multiplaform solution, a custom kotlin version of
-                {' '}<a href="https://github.com/pointfreeco/swift-composable-architecture">The Composable Architecture (TCA)</a>
+              Architected and built a kotlin multiplaform solution, a custom
+              kotlin version of{' '}
+              <a href="https://github.com/pointfreeco/swift-composable-architecture">
+                The Composable Architecture (TCA)
+              </a>
             </li>
             <li>
-              Add unit test coverage for most of the business logic, facilitated by
-              the multiplatform architecture
+              Add unit test coverage for most of the business logic, facilitated
+              by the multiplatform architecture
             </li>
             <li>
-              UI was built using Jetpack Compose for Android
-              and SwiftUI used for iOS, levering the best the mobile platform has to offer
+              UI was built using Jetpack Compose for Android and SwiftUI used
+              for iOS, levering the best the mobile platform has to offer
             </li>
             <li>
               Implemented automatic local deployment via Makefile and fastlane,
@@ -89,7 +92,7 @@ const CvPage = ({ location }) => {
           link="https://streamotion.com.au/"
           title="Senior Mobile Software Developer"
           location="Sydney"
-          dates="December 2020 - ★ Present"
+          dates="December 2020 - July 2021"
         >
           <p>
             Streamotion is a digital B2C streaming and technology business,

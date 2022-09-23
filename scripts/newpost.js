@@ -21,7 +21,7 @@ date: ${date}
 title: "${title}"
 slug: /${slug}
 ---`,
-  function(err) {
+  function (err) {
     if (err) {
       return console.log(err)
     }

@@ -86,11 +86,11 @@ module.exports = (
 
   return Promise.all([generateBackground(background), writeTextToCard(buffer)])
     .then(([base, text]) => base.composite(text, 0, 0))
-    .then(image =>
+    .then((image) =>
       image
         .writeAsync(output)
         .then(() => console.log("Generated Twitter Card: ", output))
-        .catch(err => err)
+        .catch((err) => err)
     )
     .catch(console.error);
 };
