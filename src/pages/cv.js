@@ -12,6 +12,7 @@ import gleamIcon from '../images/gleam-icon.jpg'
 import blissIcon from '../images/bliss-icon.jpg'
 import streamotionIcon from '../images/streamotion-icon.png'
 import arIcon from '../images/audience-republic.jpg'
+import remoteIcon from '../images/remote.jpg'
 
 const CvPage = ({ location }) => {
   const updatedAt = new Date().toLocaleDateString(undefined, {
@@ -32,6 +33,7 @@ const CvPage = ({ location }) => {
           <a href="#work-experience"> Work Experience </a>
         </h2>
 
+        {/*
         <Job
           company="luisramos.dev"
           image={lrIcon}
@@ -44,6 +46,22 @@ const CvPage = ({ location }) => {
             native mobile space.
           </p>
         </Job>
+      */}
+
+        <Job
+          company="Remote"
+          image={remoteIcon}
+          link="https://www.remote.com/"
+          title="Senior Mobile Engineer (iOS and Android)"
+          location="Anywhere 🌎"
+          dates="March 2023 - ★ Present"
+        >
+          <p>
+            I joined Remote to build the best mobile experience I could for
+            their platform, across iOS and Android, while using Kotlin
+            Multiplatform.
+          </p>
+        </Job>
 
         <Job
           company="Audience Republic"
@@ -51,13 +69,17 @@ const CvPage = ({ location }) => {
           link="https://www.audiencerepublic.com/"
           title="Independent Mobile Developer"
           location="Sydney"
-          dates="October 2021 - ★ Present"
+          dates="October 2021 - November 2022"
         >
           <p>
-            I was hired to build an yet unrelease mobile app for both Android
-            and iOS. I built it using Kotlin Multiplatform Mobile which enabled
-            code sharing between both platforms, with the UI being platform
-            dependent.
+            I was hired to build Wave, an{' '}
+            <a href="https://play.google.com/store/apps/details?id=com.audiencerepublic.wave.android">
+              Android
+            </a>{' '}
+            and iOS (unreleased) app. I built it using Kotlin Multiplatform
+            Mobile which enabled code sharing between both platforms, with
+            platform dependent UI. This enabled me to implement new features
+            quickly while following native conventions on both platforms.
           </p>
           <ul>
             <li>

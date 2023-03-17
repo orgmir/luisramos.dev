@@ -66,7 +66,7 @@ const AboutPage = ({ location }) => (
         </li>
         <li>
           Check out my{' '}
-          <a href="https://www.linkedin.com/in/lpramos/">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/luisramosdev/">LinkedIn</a>
         </li>
       </ul>
     </div>
